@@ -108,7 +108,7 @@ export default function SignalScanner() {
         title="Signal Scanner"
         subtitle="Your weekly volume + price scan — automated"
         right={
-          <FormControl size="small" sx={{ minWidth: 200 }}>
+          <FormControl size="small" sx={{ minWidth: { xs: 140, sm: 200 } }}>
             <Select
               value={selectedWeek}
               onChange={(e) => setSelectedWeek(e.target.value)}
@@ -268,19 +268,22 @@ export default function SignalScanner() {
       </Box>
 
       {/* Sort Controls */}
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
-        <Sort sx={{ fontSize: '1rem', color: 'text.secondary' }} />
-        <Typography variant="caption" sx={{ color: 'text.secondary', mr: 1 }}>Sort by:</Typography>
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2, flexWrap: 'wrap' }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <Sort sx={{ fontSize: '1rem', color: 'text.secondary' }} />
+          <Typography variant="caption" sx={{ color: 'text.secondary' }}>Sort by:</Typography>
+        </Box>
         <ToggleButtonGroup
           value={sortBy}
           exclusive
           onChange={(_, val) => val && setSortBy(val)}
           size="small"
+          sx={{ flexWrap: 'wrap' }}
         >
           <ToggleButton value="score" sx={toggleSx}>Score</ToggleButton>
           <ToggleButton value="volume" sx={toggleSx}>Volume</ToggleButton>
-          <ToggleButton value="change" sx={toggleSx}>Price Change</ToggleButton>
-          <ToggleButton value="delivery" sx={toggleSx}>Delivery %</ToggleButton>
+          <ToggleButton value="change" sx={toggleSx}>Change</ToggleButton>
+          <ToggleButton value="delivery" sx={toggleSx}>Delivery</ToggleButton>
         </ToggleButtonGroup>
       </Box>
 

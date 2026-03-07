@@ -228,8 +228,8 @@ export default function GlobalPulse() {
                 {[...data.sector_heatmap]
                   .sort((a, b) => b.rs_vs_nifty_4w - a.rs_vs_nifty_4w)
                   .map((s, i) => (
-                    <Box key={s.name} sx={{ display: 'flex', justifyContent: 'space-between', py: 0.4 }}>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                    <Box key={s.name} sx={{ display: 'flex', justifyContent: 'space-between', py: 0.4, gap: 1 }}>
+                      <Typography variant="body2" sx={{ color: 'text.secondary', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         {i + 1}. {s.name}
                       </Typography>
                       <ChangeIndicator value={s.rs_vs_nifty_4w} fontSize="0.8rem" />
@@ -322,7 +322,7 @@ function SectorChip({ sector }) {
         '&:hover': { transform: 'translateY(-1px)', boxShadow: '0 2px 8px rgba(0,0,0,0.3)' },
       }}
     >
-      <Typography sx={{ fontSize: '0.8rem', fontWeight: 500 }}>{sector.name}</Typography>
+      <Typography sx={{ fontSize: '0.8rem', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flex: 1, minWidth: 0 }}>{sector.name}</Typography>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
         <Typography sx={{ fontSize: '0.6rem', color: 'text.secondary' }}>1W</Typography>
         <ChangeIndicator value={sector.change_pct} fontSize="0.8rem" />

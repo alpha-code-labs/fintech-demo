@@ -293,7 +293,7 @@ export default function PortfolioMonitor() {
                 <Box sx={{ width: `${(warning.length / data.total_holdings) * 100}%`, bgcolor: 'warning.main', transition: 'width 0.5s' }} />
                 <Box sx={{ width: `${(alert.length / data.total_holdings) * 100}%`, bgcolor: 'error.main', transition: 'width 0.5s' }} />
               </Box>
-              <Box sx={{ display: 'flex', gap: 3, mt: 1 }}>
+              <Box sx={{ display: 'flex', gap: { xs: 1.5, sm: 3 }, mt: 1, flexWrap: 'wrap' }}>
                 <LegendItem color="#4caf50" label={`Healthy (${healthy.length})`} />
                 <LegendItem color="#ff9800" label={`Watch (${warning.length})`} />
                 <LegendItem color="#f44336" label={`Alert (${alert.length})`} />
@@ -729,7 +729,7 @@ function HoldingCard({ holding, status, onRemove, onSetAlert, onSell, onHold, on
         </Box>
         <Collapse in={open}>
           <Box sx={{ mt: 2, pl: 1 }}>
-            <Box sx={{ display: 'flex', gap: 3, mb: 2, flexWrap: 'wrap' }}>
+            <Box sx={{ display: 'flex', gap: { xs: 1.5, sm: 3 }, mb: 2, flexWrap: 'wrap' }}>
               <MiniStat label="Bought at" value={`₹${holding.buy_price}`} />
               <MiniStat label="Current" value={holding.current_price != null ? `₹${holding.current_price}` : '--'} />
               <MiniStat label="P&L" value={holding.pnl_pct != null ? `${holding.pnl_pct > 0 ? '+' : ''}${holding.pnl_pct}%` : '--'} color={holding.pnl_pct >= 0 ? 'success.main' : 'error.main'} />
@@ -834,7 +834,7 @@ function HoldingRow({ holding, isLast, onRemove }) {
         <Typography sx={{ fontWeight: 500, fontSize: '0.9rem' }}>{holding.name}</Typography>
         <Typography variant="caption" sx={{ color: 'text.secondary' }}>{holding.sector}</Typography>
       </Box>
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 1.5, sm: 3 } }}>
         <Box sx={{ textAlign: 'right', display: { xs: 'none', sm: 'block' } }}>
           <Typography variant="caption">Bought</Typography>
           <Typography sx={{ fontVariantNumeric: 'tabular-nums', fontSize: '0.85rem' }}>₹{holding.buy_price}</Typography>
@@ -852,7 +852,7 @@ function HoldingRow({ holding, isLast, onRemove }) {
             <Typography variant="caption" sx={{ color: 'text.disabled' }}>--</Typography>
           )}
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, minWidth: 40 }}>
+        <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center', gap: 1, minWidth: 40 }}>
           <Typography variant="caption" sx={{ textAlign: 'right', whiteSpace: 'nowrap' }}>
             {getDaysHeld(holding.buy_date) != null ? `${getDaysHeld(holding.buy_date)}d` : '--'}
           </Typography>
@@ -917,9 +917,9 @@ function WatchlistRow({ item, isLast, onRemove, onAddToPortfolio }) {
           variant="outlined"
           startIcon={<Add />}
           onClick={(e) => { e.stopPropagation(); onAddToPortfolio(item.symbol); }}
-          sx={{ textTransform: 'none', fontSize: '0.7rem', whiteSpace: 'nowrap' }}
+          sx={{ textTransform: 'none', fontSize: '0.7rem' }}
         >
-          Add to Portfolio
+          Add
         </Button>
         <Box sx={{ textAlign: 'right' }}>
           <Typography variant="caption">Price</Typography>

@@ -12,8 +12,8 @@ export default function Layout({ children }) {
         component="main"
         sx={{
           flexGrow: 1,
-          p: { xs: 2, md: 2 },
-          pb: { xs: '80px', md: 3 },
+          p: { xs: 1.5, md: 2 },
+          pb: { xs: '72px', md: 3 },
           minHeight: '100vh',
         }}
       >

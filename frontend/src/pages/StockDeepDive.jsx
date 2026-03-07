@@ -58,19 +58,19 @@ export default function StockDeepDive() {
         </Box>
       )}
       {/* Header */}
-      <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 3, flexWrap: 'wrap', gap: 2 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+      <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 3, flexWrap: 'wrap', gap: { xs: 1.5, md: 2 } }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 1, md: 2 } }}>
           <ScoreBadge score={data.score} size="large" />
           <Box>
-            <Typography variant="h4">{data.name}</Typography>
-            <Box sx={{ display: 'flex', gap: 1, mt: 0.5, flexWrap: 'wrap' }}>
+            <Typography variant="h4" sx={{ fontSize: { xs: '1.3rem', sm: '2.125rem' } }}>{data.name}</Typography>
+            <Box sx={{ display: 'flex', gap: 0.5, mt: 0.5, flexWrap: 'wrap' }}>
               <Chip label={data.symbol} size="small" sx={{ fontWeight: 600 }} />
               <Chip label={data.sector} size="small" variant="outlined" sx={{ borderColor: 'var(--surface-15)' }} />
-              {data.market_cap != null && <Chip label={`₹${data.market_cap.toLocaleString()} Cr`} size="small" variant="outlined" sx={{ borderColor: 'var(--surface-15)' }} />}
+              {data.market_cap != null && <Chip label={`₹${data.market_cap.toLocaleString()} Cr`} size="small" variant="outlined" sx={{ borderColor: 'var(--surface-15)', display: { xs: 'none', sm: 'inline-flex' } }} />}
             </Box>
           </Box>
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
+        <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: { xs: 1.5, md: 2 }, flexDirection: { xs: 'row-reverse', sm: 'row' }, width: { xs: '100%', sm: 'auto' }, justifyContent: { xs: 'flex-end', sm: 'flex-start' } }}>
           <Button variant="contained" size="small" startIcon={<Bookmark />} onClick={() => {
             addToWatchlist({ symbol: data.symbol })
               .then(() => enqueueSnackbar(`${data.name} added to watchlist`, { variant: 'success' }))
@@ -78,11 +78,11 @@ export default function StockDeepDive() {
                 const msg = err.response?.data?.detail || 'Failed to add to watchlist';
                 enqueueSnackbar(msg, { variant: 'warning' });
               });
-          }} sx={{ textTransform: 'none', whiteSpace: 'nowrap' }}>
-            Add to Watchlist
+          }} sx={{ textTransform: 'none', whiteSpace: 'nowrap', fontSize: { xs: '0.7rem', sm: '0.8125rem' } }}>
+            Watchlist
           </Button>
           <Box sx={{ textAlign: 'right' }}>
-            <Typography variant="h4" sx={{ fontVariantNumeric: 'tabular-nums' }}>₹{data.price}</Typography>
+            <Typography variant="h4" sx={{ fontVariantNumeric: 'tabular-nums', fontSize: { xs: '1.3rem', sm: '2.125rem' } }}>₹{data.price}</Typography>
             <Typography variant="caption" sx={{ color: 'text.secondary' }}>
               {data.price_date ? `Week ending ${data.price_date}` : 'Last weekly close'}
             </Typography>
@@ -281,7 +281,7 @@ export default function StockDeepDive() {
                   </TableBody>
                 </Table>
               </Box>
-              <Box sx={{ display: 'flex', gap: 3, mt: 2, pt: 2, borderTop: '1px solid var(--surface-06)' }}>
+              <Box sx={{ display: 'flex', gap: { xs: 2, md: 3 }, mt: 2, pt: 2, borderTop: '1px solid var(--surface-06)', flexWrap: 'wrap' }}>
                 <Box>
                   <Typography variant="caption">P/E</Typography>
                   <Typography variant="h6" sx={{ fontVariantNumeric: 'tabular-nums', color: data.fundamentals.pe != null ? 'text.primary' : 'text.disabled' }}>
@@ -618,43 +618,45 @@ function ChartJudgmentJournal({ symbol }) {
         </Box>
 
         {/* Entry form */}
-        <Box sx={{ display: 'flex', gap: 1.5, flexWrap: 'wrap', alignItems: 'flex-start', mb: 2 }}>
-          <FormControl size="small" sx={{ minWidth: 150 }}>
-            <InputLabel sx={{ fontSize: '0.75rem' }}>Pattern Seen</InputLabel>
-            <Select
-              value={pattern}
-              label="Pattern Seen"
-              onChange={(e) => setPattern(e.target.value)}
-              sx={{ fontSize: '0.85rem' }}
-            >
-              {PATTERN_OPTIONS.map((p) => <MenuItem key={p} value={p}>{p}</MenuItem>)}
-            </Select>
-          </FormControl>
+        <Box sx={{ display: 'flex', gap: 1.5, flexWrap: 'wrap', alignItems: 'flex-start', mb: 2, flexDirection: { xs: 'column', sm: 'row' } }}>
+          <Box sx={{ display: 'flex', gap: 1.5, flexWrap: 'wrap', alignItems: 'flex-start', width: { xs: '100%', sm: 'auto' } }}>
+            <FormControl size="small" sx={{ minWidth: { xs: '100%', sm: 150 } }}>
+              <InputLabel sx={{ fontSize: '0.75rem' }}>Pattern Seen</InputLabel>
+              <Select
+                value={pattern}
+                label="Pattern Seen"
+                onChange={(e) => setPattern(e.target.value)}
+                sx={{ fontSize: '0.85rem' }}
+              >
+                {PATTERN_OPTIONS.map((p) => <MenuItem key={p} value={p}>{p}</MenuItem>)}
+              </Select>
+            </FormControl>
 
-          <Box>
-            <Typography variant="caption" sx={{ color: 'text.secondary', mb: 0.5, display: 'block' }}>Conviction</Typography>
-            <ToggleButtonGroup
-              value={conviction}
-              exclusive
-              onChange={(_, val) => val && setConviction(val)}
-              size="small"
-            >
-              {CONVICTION_OPTIONS.map((c) => (
-                <ToggleButton
-                  key={c}
-                  value={c}
-                  sx={{
-                    textTransform: 'none', fontSize: '0.75rem', px: 1.5, py: 0.4,
-                    '&.Mui-selected': {
-                      bgcolor: c === 'High' ? 'rgba(76,175,80,0.15)' : c === 'Medium' ? 'rgba(255,152,0,0.15)' : 'rgba(244,67,54,0.15)',
-                      color: c === 'High' ? 'success.main' : c === 'Medium' ? 'warning.main' : 'error.main',
-                    },
-                  }}
-                >
-                  {c}
-                </ToggleButton>
-              ))}
-            </ToggleButtonGroup>
+            <Box>
+              <Typography variant="caption" sx={{ color: 'text.secondary', mb: 0.5, display: 'block' }}>Conviction</Typography>
+              <ToggleButtonGroup
+                value={conviction}
+                exclusive
+                onChange={(_, val) => val && setConviction(val)}
+                size="small"
+              >
+                {CONVICTION_OPTIONS.map((c) => (
+                  <ToggleButton
+                    key={c}
+                    value={c}
+                    sx={{
+                      textTransform: 'none', fontSize: '0.75rem', px: 1.5, py: 0.4,
+                      '&.Mui-selected': {
+                        bgcolor: c === 'High' ? 'rgba(76,175,80,0.15)' : c === 'Medium' ? 'rgba(255,152,0,0.15)' : 'rgba(244,67,54,0.15)',
+                        color: c === 'High' ? 'success.main' : c === 'Medium' ? 'warning.main' : 'error.main',
+                      },
+                    }}
+                  >
+                    {c}
+                  </ToggleButton>
+                ))}
+              </ToggleButtonGroup>
+            </Box>
           </Box>
 
           <TextField
@@ -665,7 +667,7 @@ function ChartJudgmentJournal({ symbol }) {
             multiline
             minRows={1}
             maxRows={3}
-            sx={{ flex: 1, minWidth: 200, '& .MuiInputBase-input': { fontSize: '0.85rem' } }}
+            sx={{ flex: 1, minWidth: { xs: 0, sm: 200 }, width: { xs: '100%', sm: 'auto' }, '& .MuiInputBase-input': { fontSize: '0.85rem' } }}
           />
 
           <Button
@@ -673,7 +675,7 @@ function ChartJudgmentJournal({ symbol }) {
             size="small"
             onClick={handleSave}
             disabled={saving || !pattern || !conviction}
-            sx={{ textTransform: 'none', fontSize: '0.8rem', mt: { xs: 0, sm: 0.5 } }}
+            sx={{ textTransform: 'none', fontSize: '0.8rem' }}
           >
             Save
           </Button>

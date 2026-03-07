@@ -216,11 +216,11 @@ export default function WeeklyBriefing() {
       {/* Quick Actions */}
       <Card sx={{ borderColor: 'rgba(79,195,247,0.1)' }}>
         <CardContent sx={{ p: 2, '&:last-child': { pb: 2 } }}>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 1 }}>
+          <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: 'space-between', alignItems: { xs: 'stretch', sm: 'center' }, gap: 1 }}>
             <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-              <Button variant="contained" size="small" onClick={() => navigate('/')}>Open Dashboard</Button>
-              <Button variant="outlined" size="small" onClick={() => navigate('/scanner')}>View All Signals</Button>
-              <Button variant="outlined" size="small" onClick={() => navigate('/portfolio')}>Review Portfolio</Button>
+              <Button variant="contained" size="small" onClick={() => navigate('/')} sx={{ fontSize: { xs: '0.7rem', sm: '0.8125rem' } }}>Dashboard</Button>
+              <Button variant="outlined" size="small" onClick={() => navigate('/scanner')} sx={{ fontSize: { xs: '0.7rem', sm: '0.8125rem' } }}>Signals</Button>
+              <Button variant="outlined" size="small" onClick={() => navigate('/portfolio')} sx={{ fontSize: { xs: '0.7rem', sm: '0.8125rem' } }}>Portfolio</Button>
             </Box>
             <Box sx={{ display: 'flex', gap: 1 }}>
               <Chip icon={<WhatsApp sx={{ fontSize: '0.9rem' }} />} label="WhatsApp" size="small" variant="outlined" sx={{ borderColor: 'var(--surface-10)' }} />

@@ -43,10 +43,10 @@ export default function MarketPhaseBadge({ label, reason, size = 'large' }) {
         border: `1px solid ${config.color}30`,
       }}
     >
-      <Icon sx={{ fontSize: { xs: '1.5rem', sm: '2rem' }, color: config.color }} />
-      <Box>
-        <Typography sx={{ fontWeight: 700, fontSize: { xs: '0.85rem', sm: '1.1rem' }, color: config.color, letterSpacing: '0.04em' }}>
-          MARKET PHASE: {label}
+      <Icon sx={{ fontSize: { xs: '1.2rem', sm: '2rem' }, color: config.color, flexShrink: 0 }} />
+      <Box sx={{ minWidth: 0 }}>
+        <Typography sx={{ fontWeight: 700, fontSize: { xs: '0.75rem', sm: '1.1rem' }, color: config.color, letterSpacing: '0.04em' }}>
+          <Box component="span" sx={{ display: { xs: 'none', sm: 'inline' } }}>MARKET PHASE: </Box>{label}
         </Typography>
         {reason && (
           <Typography variant="body2" sx={{ mt: 0.3, color: 'text.secondary' }}>

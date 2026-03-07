@@ -198,20 +198,20 @@ export default function Reporting() {
               <Typography sx={{ color: 'text.secondary' }}>No holdings yet. Add stocks from the Portfolio page.</Typography>
             </Box>
           ) : (
-            <TableContainer>
-              <Table size="small">
+            <TableContainer sx={{ overflowX: 'auto' }}>
+              <Table size="small" sx={{ minWidth: 700 }}>
                 <TableHead>
                   <TableRow>
                     <TableCell sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Stock</TableCell>
-                    <TableCell sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Sector</TableCell>
-                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Buy Date</TableCell>
-                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Days Held</TableCell>
-                    <TableCell align="center" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6M Status</TableCell>
-                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Qty</TableCell>
-                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Buy Price</TableCell>
+                    <TableCell sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', display: { xs: 'none', sm: 'table-cell' } }}>Sector</TableCell>
+                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', display: { xs: 'none', md: 'table-cell' } }}>Buy Date</TableCell>
+                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Days</TableCell>
+                    <TableCell align="center" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6M</TableCell>
+                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', display: { xs: 'none', sm: 'table-cell' } }}>Qty</TableCell>
+                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', display: { xs: 'none', md: 'table-cell' } }}>Buy Price</TableCell>
                     <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Current</TableCell>
                     <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>P&L</TableCell>
-                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Invested</TableCell>
+                    <TableCell align="right" sx={{ fontWeight: 600, fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', display: { xs: 'none', md: 'table-cell' } }}>Invested</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -228,10 +228,10 @@ export default function Reporting() {
                           <Typography sx={{ fontSize: '0.8rem', fontWeight: 600, color: 'text.primary' }}>{h.symbol}</Typography>
                           <Typography sx={{ fontSize: '0.65rem', color: 'text.secondary' }}>{h.name}</Typography>
                         </TableCell>
-                        <TableCell>
+                        <TableCell sx={{ display: { xs: 'none', sm: 'table-cell' } }}>
                           <Typography sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>{h.sector || '--'}</Typography>
                         </TableCell>
-                        <TableCell align="right">
+                        <TableCell align="right" sx={{ display: { xs: 'none', md: 'table-cell' } }}>
                           <Typography sx={{ fontSize: '0.75rem', color: 'text.secondary' }}>{formatDate(h.buy_date)}</Typography>
                         </TableCell>
                         <TableCell align="right">
@@ -248,12 +248,12 @@ export default function Reporting() {
                             <Chip label={`${183 - h.daysHeld}d left`} size="small" sx={{ fontSize: '0.65rem', height: 20, bgcolor: 'var(--surface-08)', color: 'text.secondary' }} />
                           )}
                         </TableCell>
-                        <TableCell align="right">
+                        <TableCell align="right" sx={{ display: { xs: 'none', sm: 'table-cell' } }}>
                           <Typography sx={{ fontSize: '0.8rem', color: 'text.primary', fontVariantNumeric: 'tabular-nums' }}>
                             {h.quantity || 1}
                           </Typography>
                         </TableCell>
-                        <TableCell align="right">
+                        <TableCell align="right" sx={{ display: { xs: 'none', md: 'table-cell' } }}>
                           <Typography sx={{ fontSize: '0.8rem', color: 'text.primary', fontVariantNumeric: 'tabular-nums' }}>
                             ₹{h.buy_price?.toLocaleString('en-IN', { maximumFractionDigits: 2 }) || '--'}
                           </Typography>
@@ -273,7 +273,7 @@ export default function Reporting() {
                             )}
                           </Box>
                         </TableCell>
-                        <TableCell align="right">
+                        <TableCell align="right" sx={{ display: { xs: 'none', md: 'table-cell' } }}>
                           <Typography sx={{ fontSize: '0.8rem', color: 'text.primary', fontVariantNumeric: 'tabular-nums' }}>
                             ₹{h.investedValue?.toLocaleString('en-IN', { maximumFractionDigits: 0 }) || '--'}
                           </Typography>
