@@ -271,7 +271,7 @@ Gemini 2.0 Flash`}
             ['Golden cross', '10W SMA crossed above 30W or 52W this week', 'stock_ohlc'],
             ['RS vs Nifty (4W)', 'stock_4w_return - nifty_4w_return', 'stock_ohlc + index_daily'],
             ['Consolidation', 'Longest window where (high-low)/low <= 15%. Months = weeks/4.33', 'stock_ohlc'],
-            ['Breakout pattern', 'VCP, Darvas Box, Cup & Handle, Inv H&S — classified from shape', '_detect_consolidation_patterns()'],
+            ['Breakout pattern', 'VCP, Darvas Box, Cup & Handle, Inv H&S — algorithmically classified from weekly OHLC data within the consolidation window', '_detect_consolidation_patterns()'],
           ]}
         />
       </InfoAccordion>

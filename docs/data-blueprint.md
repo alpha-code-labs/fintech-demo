@@ -223,7 +223,7 @@ Gemini 2.0 Flash
 | Consolidation range | Computed | [min_low, max_high] during the consolidation window |
 | Breakout status | Computed | BREAKOUT (price > range high), BREAKDOWN (price < range low), IN RANGE |
 | Key levels chips | Computed | breakout level, 30W MA, 52W MA — all from price calculations |
-| Pattern detected chips | `_detect_consolidation_patterns()` | Algorithmic detection of VCP, Darvas Box, Cup & Handle, Inv H&S within the consolidation window |
+| Pattern detected chips | `_detect_consolidation_patterns()` | Algorithmically classified from weekly high/low/close data within the consolidation window: VCP (contracting ranges across 3 segments), Darvas Box (tight range < 8% in latter 2/3), Cup & Handle (U-shaped closes with handle pullback), Inv H&S (3-segment lows where middle is deepest) |
 | "No consolidation" message | Shown when `consolidation_months = 0` | "Stock price range exceeded 15% in every 4-week window" |
 
 ### Chart Judgment Journal
@@ -250,7 +250,7 @@ Gemini 2.0 Flash
 | RS vs Nifty (4W) | `stock_ohlc` + `index_daily` | `stock_4w_return - nifty_4w_return`. Green if positive |
 | Consolidation | `stock_ohlc` | Months in range + price band. "None detected" if < 6 months |
 | Breakout above | `stock_ohlc` | Upper bound of consolidation range |
-| Breakout Pattern | `_detect_consolidation_patterns()` | VCP, Darvas Box, Cup & Handle, Inv H&S — or "None detected" |
+| Breakout Pattern | `_detect_consolidation_patterns()` | VCP, Darvas Box, Cup & Handle, Inv H&S — algorithmically classified from weekly OHLC data within the consolidation window, or "None detected" |
 
 ### Sector Context
 
