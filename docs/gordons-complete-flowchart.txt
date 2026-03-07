@@ -1,0 +1,392 @@
+COMPLETE INVESTMENT PROCESS — FLOWCHART
+=========================================
+
+
+PHASE 0: MACRO SCAN (Daily — "Where is the money flowing?")
+=============================================================
+
+    Open TradingView
+         |
+         v
+    Global indices (US, Europe, Asia)
+         |
+         v
+    Macro indicators (Dollar index, bond yields, oil)
+         |
+         v
+    Commodities (Gold, crude, metals)
+         |
+         v
+    Indian indices (Nifty, Bank Nifty, Midcap, Smallcap)
+         |
+         v
+    Sector indices (IT, Pharma, Auto, Infra, PSU, etc.)
+         |
+         v
+    FORM A POINT OF VIEW:
+    - Is global liquidity supportive or hostile?
+    - Where is money flowing — which geography, which asset class?
+    - Is the Indian market in a bull, bear, or sideways phase?
+    - Which sectors are showing strength or weakness?
+         |
+         v
+    CHECK MARKET DEPTH:
+    (a) Advance/Decline ratio — more stocks going up or down?
+    (b) 52-week highs vs lows — where is broad strength?
+    (c) Large/Mid/Small/Micro — which cohort is closest to
+        52-week highs? Which is lagging?
+         |
+         v
+    OUTPUT: "The tide is with us / against us / mixed"
+            "Money is flowing into X sector / X asset class"
+
+
+PHASE 1: LIQUIDITY FILTER (Weekly — "What stocks are showing unusual activity?")
+==================================================================================
+
+    Scan CNX 500 (wants to expand to all stocks above 500 Cr market cap)
+         |
+         v
+    FILTER 1: Weekly traded volume >= 5x annual average volume
+         |
+         ├── NO  → Ignore. No matter how good the company looks.
+         |         Not in the pool. Does not exist.
+         |
+         v YES
+         |
+    FILTER 2: Price up 5-10% or more alongside that volume spike
+         |
+         ├── NO  → Check if high volume + price DOWN = bad signal.
+         |         Skip or add to "watch for breakdown" list.
+         |
+         v YES
+         |
+    FILTER 3: Is delivery volume high? (not just intraday speculation)
+         |
+         ├── LOW delivery % → Likely traders playing games. Weak signal.
+         |                     Watch but don't act.
+         |
+         v HIGH delivery %
+         |
+    OUTPUT: Pool of 10-30 stocks with unusual volume + price action
+            backed by real buying conviction.
+
+
+PHASE 2: TECHNICAL CONFIRMATION (Weekly — "Is this a real breakout?")
+======================================================================
+
+    Take each stock from Phase 1 pool
+         |
+         v
+    CHECK: Is the stock breaking out of a long consolidation (6+ months)?
+         |
+         ├── NO consolidation → Might just be a random spike.
+         |                       Lower conviction. Still check other signals.
+         |
+         v YES — breaking out of consolidation
+         |
+    WHICH PATTERN? (Manual judgment — "part art, part science")
+         |
+         ├── Cup and Handle?
+         ├── Darvas Box?
+         ├── Inverted Head and Shoulders?
+         ├── Minervini Volatility Contraction Pattern (VCP)?
+         ├── Some variation of the above?
+         |
+         v
+    CHECK: Moving average signals
+         |
+         ├── Is price breaking above 30-week MA?          YES = bullish
+         ├── Is price breaking above 52-week MA?          YES = bullish
+         ├── Golden crossover (10-week crossing above      YES = momentum
+         |   30-week or 52-week)?                          confirmed
+         |
+         v
+    CHECK: Relative strength
+         |
+         ├── Is this stock outperforming the Nifty?       YES = buyers are
+         |                                                  prioritizing this
+         |                                                  stock over the market
+         |
+         v
+    *** HUMAN JUDGMENT CHECKPOINT ***
+    Visually review charts for each stock.
+    Validate pattern quality. This is NOT automated.
+    Decide: valid breakout or noise?
+         |
+         ├── NOT CONVINCED → Drop from list. Move on.
+         |
+         v CONVINCED
+         |
+    OUTPUT: Shortlist of maybe 5-10 stocks with confirmed
+            technical setups.
+
+
+PHASE 3: SENTIMENT CHECK ("Is the tide with this stock?")
+============================================================
+
+    Take each stock from Phase 2 shortlist
+         |
+         v
+    CHECK: Sector strength
+         |
+         ├── Are peers in the same sector also showing positive
+         |   price action, volume spikes, or breakouts?
+         |
+         ├── YES → Sector of the cycle may be starting.
+         |         Stronger conviction. Check all stocks in sector.
+         |
+         ├── NO  → This is a single stock story.
+         |         Not bad, but less tailwind. Needs stronger
+         |         fundamental backing.
+         |
+         v
+    CHECK: Broader market alignment
+         |
+         ├── Is the overall market supportive? (from Phase 0)
+         |
+         ├── YES → Tailwind. "When it rains everyone gets wet."
+         |
+         ├── NO  → Swimming against the tide. Needs VERY strong
+         |         signals to proceed. Higher risk.
+         |
+         v
+    OUTPUT: Shortlist with sentiment context —
+            "This stock has sector support and market tailwind"
+            OR "This is a solo story in a weak market — be careful"
+
+
+PHASE 4: FUNDAMENTAL FILTER ("WHY is this stock moving?")
+============================================================
+
+    Take each stock from Phase 3
+         |
+         v
+    Open Screener.in + Exchange filings + Google/AI for news
+         |
+         v
+    CHECK THE THREE CORE DRIVERS:
+         |
+         ├── (a) Revenue growth?
+         |       Is the company selling more than before?
+         |       Compare last quarter vs year-ago quarter.
+         |
+         ├── (b) Margin growth?
+         |       Is the company keeping more of what it sells?
+         |       Operating margin or net margin expanding?
+         |
+         ├── (c) Balance sheet improvement?
+         |       Is debt going down? Is working capital improving?
+         |       Is ROCE trending up?
+         |
+         v
+    DOES THE REASON FIT ONE OF THE 8 SETUPS?
+         |
+         ├── 1. Business mix change?
+         ├── 2. Management change?
+         ├── 3. Sector of the cycle?
+         ├── 4. Forced buying or selling?
+         ├── 5. Sudden and big earnings surprise?
+         ├── 6. Debt reduction?
+         ├── 7. Balance sheet improvement?
+         ├── 8. Supply disruption?
+         |
+         ├── FITS A SETUP → Strong conviction.
+         |                   The move has fundamental backing.
+         |                   The setup also hints at boundary
+         |                   conditions (when it might end).
+         |
+         ├── DOESN'T FIT → Move might be speculation or
+         |                  manipulation. Be very cautious.
+         |                  Maybe skip.
+         |
+         v
+    *** HUMAN JUDGMENT CHECKPOINT ***
+    Apply qualitative checks:
+    - Management quality — are these people trustworthy?
+    - Is this stock "operated" (manipulated by operators)?
+    - What does the network say?
+    - AI-assisted risk/reward framework
+         |
+         ├── NOT CONVINCED → Drop. Move on.
+         |
+         v CONVINCED
+         |
+    OUTPUT: Final buy list of maybe 2-5 stocks with full
+            technical + sentiment + fundamental alignment.
+
+
+PHASE 5: POSITION SIZING & ENTRY ("How much to bet?")
+=======================================================
+
+    Take final buy list
+         |
+         v
+    PORTFOLIO RULES:
+    - Hold 15-25 stocks total
+    - Near 15 when aggressive (high conviction market)
+    - Near 25 when diversifying (uncertain market)
+    - Build position in a few weeks (not all at once)
+         |
+         v
+    *** HUMAN JUDGMENT ***
+    - How many signals aligned? (more signals = larger position)
+    - Current portfolio composition (already heavy in this sector?)
+    - Current market phase (bull = be aggressive, uncertain = be careful)
+    - How much cash is available?
+         |
+         v
+    EXECUTE: Buy on broker platform.
+    Must hold minimum 6 months (compliance requirement).
+
+
+PHASE 6: MONITORING & EXIT ("When is the party over?")
+========================================================
+
+    For each stock in portfolio — ongoing monitoring
+         |
+         v
+    WATCH FOR EXIT SIGNALS:
+         |
+         ├── Long upper wicks on weekly candles for 3-4 weeks?
+         |   (Price keeps trying to go up but sellers push it down.
+         |    A month of this = selling pressure building.)
+         |
+         ├── Head and Shoulders pattern forming?
+         |   (Three peaks, middle one highest. Classic reversal.)
+         |
+         ├── Price breaking below 30-week or 52-week moving average?
+         |   ("This is the most key pattern.")
+         |
+         ├── Price breaking below a previous support level?
+         |   (Floor is broken. Buyers who were defending that
+         |    level have given up.)
+         |
+         ├── Bad news + any of the above technical signals?
+         |   (Bad news alone isn't enough. Bad news + technical
+         |    breakdown = get out.)
+         |
+         ├── Significant margin borrowing in the market?
+         |   (When people are borrowing heavily to buy stocks,
+         |    the market is overleveraged. A small shock can
+         |    cause a cascade of forced selling.)
+         |
+         v
+    ALSO CHECK: Has the fundamental setup ended?
+         |
+         ├── Earnings surprise → was it one-time? Next quarter normal?
+         ├── Supply disruption → has supply normalized?
+         ├── Sector cycle → is the sector getting exhausted?
+         ├── Debt reduction → has it stalled?
+         |
+         v
+    *** HUMAN JUDGMENT CHECKPOINT ***
+    This is the hardest part. You're sitting on profits.
+    Intermediate consolidation confuses you.
+    "Closely watch the pattern being formed
+    and lean on the fundamental analysis."
+         |
+         ├── EXIT SIGNALS PRESENT → Sell. Book profits. Move cash
+         |                           to next opportunity.
+         |
+         ├── NO EXIT SIGNALS → Hold. Let it compound.
+         |                      "Let the management compound
+         |                       earnings for you."
+         |
+         v
+    CYCLE REPEATS: Cash from exits goes back to Phase 0.
+    Start scanning for the next opportunity.
+
+
+MARKET CONDITION OVERLAY
+=========================
+
+All of the above operates WITHIN the broader market context:
+
+    BULL MARKET:
+    - System works excellently
+    - More stocks triggering signals
+    - Higher conviction on positions
+    - Can be more aggressive on sizing
+
+    SIDEWAYS MARKET:
+    - Fewer signals, be selective
+    - Look for "there is always a bull market somewhere"
+    - Maybe only specific sectors working
+    - Tighter position sizing
+
+    BEAR MARKET:
+    - Very few buy signals (this is correct — don't fight it)
+    - Focus shifts to: where is the money going?
+    - Cash is a position
+    - Watch for exit signals on existing holdings
+    - Prepare watchlist for the eventual recovery
+
+
+SUMMARY: THE FULL FUNNEL
+==========================
+
+    ~500+ stocks (or all above 500 Cr market cap)
+         |
+         | Phase 0: Macro context — where is money flowing?
+         |
+         v
+    Volume + Price spike filter (AUTOMATED)
+         |
+         v
+    ~20-30 stocks
+         |
+         | Phase 2: Breakout + MA + Relative Strength (SEMI-AUTOMATED)
+         | Pattern recognition = MANUAL (human judgment)
+         |
+         v
+    ~5-10 stocks
+         |
+         | Phase 3: Sector + Market sentiment (AUTOMATED)
+         |
+         v
+    ~5-10 stocks (with sentiment context added)
+         |
+         | Phase 4: Fundamental check + Setup matching (SEMI-AUTOMATED)
+         | Qualitative judgment = MANUAL (management quality, network)
+         |
+         v
+    ~2-5 stocks
+         |
+         | Phase 5: Position sizing + Entry (MANUAL)
+         |
+         v
+    Portfolio of 15-25 stocks
+         |
+         | Phase 6: Ongoing monitoring + Exit signals (SEMI-AUTOMATED)
+         | Final sell decision = MANUAL
+         |
+         v
+    Cash recycled back to Phase 0
+
+
+WHAT WE AUTOMATE vs WHAT STAYS HUMAN
+========================================
+
+FULLY AUTOMATED:
+- Phase 0: Macro dashboard (indices, breadth, sector strength)
+- Phase 1: Volume + price spike screener
+- Moving average calculations and crossover detection
+- Relative strength calculations
+- Market depth (advance/decline, 52w high/low)
+- Fundamental data pulls (revenue, margin, debt, ROCE)
+- Exit signal monitoring (MA breaks, support breaks)
+
+SEMI-AUTOMATED (system surfaces, human decides):
+- Fundamental setup matching (flag which setup might apply)
+- Sector correlation (flag if peers are also moving)
+- Earnings surprise detection (flag unusual quarterly results)
+- News/event scanning with AI
+
+STAYS FULLY HUMAN:
+- Chart pattern recognition (consolidation breakouts)
+- Management quality assessment
+- "Operated stock" identification
+- Network checks
+- Position sizing decisions
+- Final buy/sell calls

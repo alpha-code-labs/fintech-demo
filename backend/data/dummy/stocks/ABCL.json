@@ -1,0 +1,58 @@
+{
+  "symbol": "ABCL",
+  "name": "ABCL Ltd",
+  "sector": "Chemicals",
+  "market_cap": 4200,
+  "price": 342,
+  "score": 8,
+  "technical": {
+    "vol_vs_avg": 7.3,
+    "delivery_pct": 68,
+    "above_30w_ma": true,
+    "ma_30w": 298,
+    "above_52w_ma": true,
+    "ma_52w": 275,
+    "golden_cross": "10W crossed 30W",
+    "rs_vs_nifty_4w": 5.2,
+    "consolidation_months": 14,
+    "consolidation_range": [260, 310],
+    "breakout_level": 310
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": 3.8,
+    "peers_triggered": [
+      {"symbol": "DEEPAKNTR", "name": "Deepak Nitrite", "change_pct": 6.3, "vol_vs_avg": 5.2, "score": 6},
+      {"symbol": "AARTIIND", "name": "Aarti Industries", "change_pct": 4.8, "vol_vs_avg": 4.1, "score": 5},
+      {"symbol": "NAVINFLUOR", "name": "Navin Fluorine", "change_pct": 7.1, "vol_vs_avg": 6.8, "score": 7}
+    ]
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 245, "operating_margin": 18.2, "net_profit": 32, "eps": 8.2, "total_debt": 120, "roce": 22.4, "promoter_holding": 62.3},
+      {"label": "Q2 FY26", "revenue": 220, "operating_margin": 16.5, "net_profit": 24, "eps": 6.1, "total_debt": 145, "roce": 18.1, "promoter_holding": 62.3},
+      {"label": "Q3 FY25", "revenue": 185, "operating_margin": 14.1, "net_profit": 16, "eps": 4.1, "total_debt": 180, "roce": 14.2, "promoter_holding": 62.3}
+    ],
+    "pe": 18.5,
+    "industry_pe": 24.2
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Earnings Surprise", "detail": "Net profit doubled YoY. Revenue also grew 32% — not a one-time bump.", "source": "auto"},
+      {"setup": "Debt Reduction", "detail": "Debt down 33% in 3 quarters.", "source": "auto"},
+      {"setup": "Margin Expansion", "detail": "OPM up from 14% to 18% over 4 quarters. Possible business mix shift — check segment data.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "3 chemical peers also triggered this week. Sector RS rising.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Management Change", "detail": "No recent board changes found.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "No relevant disruption detected.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No index rebalancing. No unusual bulk deals.", "source": "data"},
+      {"setup": "Business Mix Change", "detail": "Needs segment revenue data. Check on Screener.in.", "source": "manual"}
+    ]
+  },
+  "ai_summary": "ABCL breaking out of 14-month range on 7.3x volume with 68% delivery. All MAs aligned. Sector confirming — 3 peers also triggered. Revenue +32% YoY, margins expanding, debt reducing. P/E 18.5x vs industry 24.2x.",
+  "key_levels": {
+    "breakout": 310,
+    "ma_30w": 298,
+    "ma_52w": 275
+  }
+}

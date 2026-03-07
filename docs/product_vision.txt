@@ -1,0 +1,722 @@
+YOUR INVESTMENT SYSTEM — AS A PRODUCT
+========================================
+
+
+WHAT WE'RE BUILDING
+=====================
+
+A tool that automates the scanning, scoring, data-pulling, and
+monitoring parts of your investment process. It runs your filters
+on all stocks above 500 Cr market cap every week, pulls the numbers
+you check, flags the setups you look for, and watches your portfolio
+for the exit signals you care about.
+
+It does NOT make decisions. Every buy/sell call, every chart pattern
+judgment, every conviction call stays with you.
+
+
+YOUR PROCESS — AS WE UNDERSTAND IT
+=====================================
+
+Before building anything, we need you to validate that we've captured
+your process correctly. Here's what we understood:
+
+  ~1,200+ stocks above 500 Cr market cap
+       |
+       |  STEP 1: Daily macro scan
+       |  Check global indices, commodities, dollar, yields, INR,
+       |  Indian indices (all sectors), FII/DII, advance/decline,
+       |  52W highs vs lows. Form a view: is the tide with us?
+       |
+       v
+  STEP 2: Weekly volume + price scan
+  Filter 1: Weekly traded volume >= 5x annual average
+       ├── NO → Stock doesn't exist. Ignore.
+       └── YES ↓
+  Filter 2: Price up 5%+ alongside that volume spike
+       ├── NO → Skip (or watch if high volume + price down)
+       └── YES ↓
+  Filter 3: Delivery volume high?
+       ├── LOW → Likely speculative. Watch, don't act.
+       └── HIGH ↓
+       |
+       v
+  ~20-30 stocks that passed all three filters
+       |
+       |  STEP 3: Technical confirmation
+       |  For each stock:
+       |  - Is it breaking out of a 6+ month consolidation?
+       |  - What pattern? (cup & handle, darvas box, inverted H&S, VCP)
+       |    *** YOUR VISUAL JUDGMENT — not automated ***
+       |  - Above 30W MA? Above 52W MA?
+       |  - Golden crossover (10W crossing 30W or 52W)?
+       |  - Outperforming the Nifty? (relative strength)
+       |
+       v
+  ~5-10 stocks with confirmed technical setups
+       |
+       |  STEP 4: Sentiment check
+       |  - Are peers in the same sector also moving?
+       |  - Is the broader market supporting this?
+       |
+       v
+  ~5-10 stocks with sentiment context
+       |
+       |  STEP 5: Fundamental check
+       |  Revenue growth? Margin expansion? Debt reducing? ROCE improving?
+       |  Does the move fit one of your 8 setups?
+       |  *** MANAGEMENT QUALITY, NETWORK CHECKS — your judgment ***
+       |
+       v
+  ~2-5 stocks you're convinced about
+       |
+       |  STEP 6: Position sizing + entry
+       |  *** 100% your call — not in the product ***
+       |
+       v
+  Portfolio of 15-25 stocks
+       |
+       |  STEP 7: Ongoing monitoring
+       |  Watch for exit signals: upper wicks, MA breaks, support breaks,
+       |  head & shoulders, bad news + technical breakdown, margin leverage
+       |  Has the original setup ended?
+       |  *** SELL DECISION — 100% your call ***
+       |
+       v
+  Cash from exits goes back to Step 1.
+
+
+DID WE GET THIS RIGHT?
+If anything is off, wrong, or missing — that needs to be fixed
+before we build.
+
+
+WHAT YOU'LL SEE — 5 SCREENS
+==============================
+
+
+-------------------------------------------------------------
+SCREEN 1: GLOBAL PULSE
+(Your daily macro scan — automated)
+-------------------------------------------------------------
+
+Everything you currently check across multiple TradingView tabs,
+on one screen, auto-refreshed.
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  GLOBAL PULSE                                        March 3, 2026 │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  MARKET PHASE: CAUTIOUSLY BULLISH                                  │
+│  (Criteria explained below — need your input on this)              │
+│                                                                     │
+│  WORLD INDICES                          COMMODITIES                 │
+│  ┌──────────────────────────┐           ┌────────────────────────┐  │
+│  │ S&P 500      5,234  +0.8%│           │ Gold     $2,145  +0.3% │  │
+│  │ Nasdaq      16,432  +1.2%│           │ Crude      $78   -1.1% │  │
+│  │ FTSE         7,612  -0.2%│           │ Silver      $24  +0.5% │  │
+│  │ Nikkei      38,456  +0.5%│           │ Copper    $8,900 +0.7% │  │
+│  │ Shanghai     3,012  -0.4%│           │ Natural Gas $2.1  -2.3% │  │
+│  └──────────────────────────┘           └────────────────────────┘  │
+│                                                                     │
+│  MACRO INDICATORS                                                   │
+│  ┌──────────────────────────────────────────────────────────────┐   │
+│  │ Dollar Index (DXY): 104.2 (+0.1%)  │  US 10Y Yield: 4.32%   │   │
+│  │ India 10Y Yield: 7.12%             │  INR/USD: 83.45         │   │
+│  │ FII Flow (MTD): -₹2,345 Cr        │  DII Flow (MTD): +₹4,567│   │
+│  └──────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  INDIAN INDICES                                                     │
+│  ┌──────────────────────────────────────────────────────────────┐   │
+│  │ Nifty 50     22,345  +0.6%  │  Distance from 52W High: -3.2% │  │
+│  │ Bank Nifty   47,234  +0.3%  │  Distance from 52W High: -5.1% │  │
+│  │ Nifty Midcap 32,456  +1.1%  │  Distance from 52W High: -1.8% │  │
+│  │ Nifty Small  11,234  +1.4%  │  Distance from 52W High: -7.2% │  │
+│  └──────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  MARKET DEPTH                                                       │
+│  ┌──────────────────────────────────────────────────────────────┐   │
+│  │ Advancing: 342  │  Declining: 158  │  Ratio: 2.16            │  │
+│  │ 52W Highs: 47   │  52W Lows: 12    │  Ratio: 3.9             │  │
+│  └──────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  SECTOR HEATMAP                                                     │
+│  ┌──────────────────────────────────────────────────────────────┐   │
+│  │  ██ IT +2.1%    ██ Pharma +1.8%   ██ Auto +1.2%             │   │
+│  │  ██ PSU +0.9%   ▒▒ FMCG +0.1%    ░░ Realty -0.3%           │   │
+│  │  ░░ Metal -1.2% ░░ Media -0.8%    ░░ Energy -0.5%           │   │
+│  │                                                               │   │
+│  │  ██ = strong (>1%)  ▒▒ = flat  ░░ = weak (<0%)              │   │
+│  │                                                               │   │
+│  │  SECTOR RELATIVE STRENGTH (vs Nifty, 4-week):                │   │
+│  │  1. IT         +4.2%                                          │   │
+│  │  2. Pharma     +3.1%                                          │   │
+│  │  3. Auto       +1.8%                                          │   │
+│  │  ...                                                          │   │
+│  │  10. Metal     -3.4%                                          │   │
+│  └──────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  [View Detailed Charts]  [View Sector Drilldown]                    │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+ABOUT THE MARKET PHASE INDICATOR:
+
+Your entire system operates within the broader market context — bull,
+sideways, or bear changes how you read signals and size positions.
+We want to surface this as a structured indicator at the top, not just
+a feeling.
+
+Our PROPOSED criteria (need your input — what do YOU look at to decide
+if the market is bull / sideways / bear?):
+
+  BULLISH:
+  - Nifty above 52W MA
+  - Advance/Decline ratio consistently above 1.5
+  - 52W highs significantly exceeding 52W lows
+  - FII + DII combined flow positive
+
+  SIDEWAYS:
+  - Advance/Decline near 1.0
+  - Index range-bound
+  - Mixed signals
+
+  BEARISH:
+  - Nifty below 52W MA
+  - More stocks declining than advancing
+  - 52W lows exceeding 52W highs
+
+  >>> QUESTION: What signals do you actually use to determine
+      market phase? These are our best guess.
+
+Automated: 100%. No human input needed.
+Refreshed: During market hours + end-of-day summary.
+
+
+-------------------------------------------------------------
+SCREEN 2: SIGNAL SCANNER
+(Your weekly volume + price scan — automated)
+-------------------------------------------------------------
+
+The system runs your three filters on all stocks above 500 Cr market
+cap every week. Stocks that pass all three show up here, ranked.
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  SIGNAL SCANNER                        Week ending: Feb 28, 2026   │
+│                                                                     │
+│  Scanning: 1,247 stocks (above 500 Cr market cap)                  │
+│                                                                     │
+│  23 STOCKS TRIGGERED THIS WEEK                                     │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  STOCK        PRICE    CHG%   VOL vs AVG   DELIVERY%   SCORE       │
+│  ─────────────────────────────────────────────────────────────────  │
+│                                                                     │
+│  ABCL Ltd     ₹342    +8.2%    7.3x         68%       8/8         │
+│  │ ├ Above 30W MA: YES                                              │
+│  │ ├ Above 52W MA: YES                                              │
+│  │ ├ Golden Cross: 10W crossed 30W this week                        │
+│  │ ├ RS vs Nifty (4W): +5.2%                                       │
+│  │ ├ Consolidation breakout: 14 months                              │
+│  │ ├ Sector (Chemicals): 3 peers also triggered                     │
+│  │ └ Score: 8/8                                                      │
+│  │                                                                   │
+│  XYZ Pharma   ₹567    +6.1%    5.8x         72%       6/8          │
+│  │ ├ Above 30W MA: YES                                              │
+│  │ ├ Above 52W MA: NO (below by 3%)                                │
+│  │ ├ Golden Cross: NO                                               │
+│  │ ├ RS vs Nifty (4W): +2.1%                                       │
+│  │ ├ Consolidation breakout: 8 months                               │
+│  │ ├ Sector (Pharma): Index outperforming                           │
+│  │ └ Score: 6/8                                                      │
+│  │                                                                   │
+│  PQR Steel    ₹189    +5.4%    6.1x         41%       3/8          │
+│  │ ├ Above 30W MA: YES                                              │
+│  │ ├ Above 52W MA: NO                                               │
+│  │ ├ Golden Cross: NO                                               │
+│  │ ├ RS vs Nifty (4W): -1.2%                                       │
+│  │ ├ Consolidation: 4 months (short)                                │
+│  │ ├ Sector (Metal): Weak                                           │
+│  │ ├ NOTE: Delivery at 41% — possibly speculative                   │
+│  │ └ Score: 3/8                                                      │
+│  │                                                                   │
+│  ... (20 more stocks, sorted by score)                              │
+│                                                                     │
+│  [Sort by: Score | Volume | Price Change | Delivery %]              │
+│  [Filter by: Sector | Market Cap | Score >= X]                      │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+HOW THE SCORING WORKS:
+
+To rank the stocks that pass your three filters, we propose a scoring
+system. This is OUR design — not something you described. The idea is
+to give you a quick way to prioritize which stocks to look at first.
+
+  GATES (must pass all three to even appear):
+    - Weekly volume >= 5x annual average
+    - Price up >= 5%
+    - Delivery volume high
+
+  SCORE (each YES adds +1 point, max 8/8):
+    1. Delivery % above threshold             +1
+    2. Price above 30-week MA                 +1
+    3. Price above 52-week MA                 +1
+    4. Golden crossover (10W above 30W/52W)   +1
+    5. Relative strength positive vs Nifty    +1
+    6. Breaking out of 6+ month consolidation +1
+    7. Sector index outperforming Nifty       +1
+    8. Multiple peers also triggered           +1
+
+  >>> QUESTION: Does this scoring make sense to you? Would you
+      rank these signals differently? Is anything missing?
+      Is anything here that you wouldn't weight equally?
+
+  >>> QUESTION: What delivery % do you consider "high"? We used
+      50% as a starting point but this should come from you.
+
+
+WHAT THE SCANNER DOES AND DOESN'T DO:
+
+  DOES: Detect that a stock has been in a price range for 6+ months
+  and is now breaking above it. Flags it as a consolidation breakout.
+
+  DOES NOT: Tell you what pattern the consolidation forms. Cup and
+  handle, darvas box, inverted H&S, VCP — that's your visual judgment
+  when you look at the chart in Screen 3. The system finds the
+  candidates. You read the pattern.
+
+Automated: 100%. Runs every Saturday on weekly data. Daily scan optional.
+
+
+-------------------------------------------------------------
+SCREEN 3: STOCK DEEP DIVE
+(When you click a stock — chart + fundamentals + setups)
+-------------------------------------------------------------
+
+You click on a stock from the scanner. This screen gives you
+everything you normally pull up across TradingView, Screener.in,
+and Google — in one place.
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  ABCL LTD — DEEP DIVE                                    ₹342     │
+│  Sector: Chemicals  |  Market Cap: ₹4,200 Cr  |  Score: 8/8      │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  ┌─── CHART ──────────────────────────────────────────────────┐    │
+│  │                                                             │    │
+│  │  [TradingView chart — weekly candles]                       │    │
+│  │  Your MAs drawn: 10W, 30W, 52W                              │    │
+│  │  Volume bars below                                          │    │
+│  │  Consolidation zone shaded                                  │    │
+│  │                                                             │    │
+│  │  *** YOUR JUDGMENT HAPPENS HERE ***                         │    │
+│  │  System shades the consolidation zone.                      │    │
+│  │  You decide: what pattern is this? Am I convinced?          │    │
+│  │                                                             │    │
+│  └─────────────────────────────────────────────────────────────┘    │
+│                                                                     │
+│  TECHNICAL SIGNALS                                                  │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ Volume this week:   7.3x average                            │   │
+│  │ Delivery %:         68%                                     │   │
+│  │ Above 30W MA:       YES (MA at ₹298)                       │   │
+│  │ Above 52W MA:       YES (MA at ₹275)                       │   │
+│  │ Golden Cross:       10W crossed 30W                         │   │
+│  │ RS vs Nifty (4W):   +5.2%                                  │   │
+│  │ Consolidation:      14 months (₹260-310 range)             │   │
+│  │ Breakout above:     ₹310 (prev resistance)                 │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  SECTOR CONTEXT                                                     │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ Chemical sector RS vs Nifty (4W): +3.8%                     │   │
+│  │                                                              │   │
+│  │ Peers also triggered this week:                              │   │
+│  │   Deepak Nitrite    +6.3%   Vol 5.2x   Score: 6/8          │   │
+│  │   Aarti Industries  +4.8%   Vol 4.1x   Score: 5/8          │   │
+│  │   Navin Fluorine    +7.1%   Vol 6.8x   Score: 7/8          │   │
+│  │                                                              │   │
+│  │ 3 peers triggered — possible sector momentum                 │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  FUNDAMENTALS (auto-pulled quarterly data)                         │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │                  Q3 FY26   Q2 FY26   Q3 FY25   YoY Change  │   │
+│  │ Revenue (Cr)       245       220       185      +32.4%      │   │
+│  │ Operating Margin    18.2%    16.5%     14.1%    +4.1%       │   │
+│  │ Net Profit (Cr)      32       24        16      +100%       │   │
+│  │ EPS                 8.2      6.1       4.1      +100%       │   │
+│  │                                                              │   │
+│  │ Total Debt (Cr)     120       145       180     -33.3%      │   │
+│  │ ROCE                22.4%    18.1%     14.2%    Improving   │   │
+│  │ Promoter Holding    62.3%    62.3%     62.3%    No change   │   │
+│  │ P/E                 18.5x                                    │   │
+│  │ Industry P/E        24.2x                                    │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  SETUP DETECTION                                                    │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ Which of the 8 setups might explain this move?              │   │
+│  │                                                              │   │
+│  │ AUTO-DETECTED (from the numbers):                           │   │
+│  │ >> Earnings surprise — Net profit doubled YoY.              │   │
+│  │    Revenue also grew 32% — not a one-time accounting bump.  │   │
+│  │                                                              │   │
+│  │ >> Debt reduction — Debt down 33% in 3 quarters.            │   │
+│  │                                                              │   │
+│  │ >> Margin expansion — OPM up from 14% to 18% over 4 qtrs.  │   │
+│  │    Possible business mix shift? Check segment data manually.│   │
+│  │                                                              │   │
+│  │ >> Sector of the cycle — 3 chemical peers also triggered    │   │
+│  │    this week. Sector RS rising.                              │   │
+│  │                                                              │   │
+│  │ FROM NEWS SCAN:                                              │   │
+│  │    Management change — No recent board changes found         │   │
+│  │    Supply disruption — No relevant disruption detected       │   │
+│  │                                                              │   │
+│  │ NOT AUTO-AVAILABLE:                                          │   │
+│  │    Forced buying/selling — No index rebalancing. No unusual  │   │
+│  │      bulk deals. (Promoter issues/fund redemptions would     │   │
+│  │      show up in news scan above)                             │   │
+│  │    Business mix change — Needs segment revenue data.         │   │
+│  │      Check on Screener.in or in the annual report.           │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  AI SUMMARY                                                         │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ A summary pulling together the technical signals, sector     │   │
+│  │ context, and fundamental data above into one readable note.  │   │
+│  │                                                              │   │
+│  │ This is generated by an AI model (Gemini or Claude).         │   │
+│  │ It summarizes the DATA — it does not give opinions or make   │   │
+│  │ recommendations. Think of it as a research assistant writing  │   │
+│  │ up a brief from the numbers. Your interpretation matters,    │   │
+│  │ not the AI's.                                                │   │
+│  │                                                              │   │
+│  │ Example output:                                              │   │
+│  │ "ABCL breaking out of 14-month range on 7.3x volume with    │   │
+│  │  68% delivery. All MAs aligned. Sector confirming — 3 peers  │   │
+│  │  also triggered. Revenue +32% YoY, margins expanding, debt   │   │
+│  │  reducing. P/E 18.5x vs industry 24.2x."                    │   │
+│  │                                                              │   │
+│  │ Key levels (from calculations, not AI opinion):              │   │
+│  │  30W MA: ₹298    52W MA: ₹275    Breakout level: ₹310      │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  [Add to Watchlist]  [Add to Portfolio]  [Dismiss]  [Flag for Later]│
+└─────────────────────────────────────────────────────────────────────┘
+
+
+YOUR JUDGMENT ON THIS SCREEN:
+  - Chart pattern — what is it? Is it convincing?
+  - Management quality
+  - Is this stock "operated"?
+  - What does your network say?
+  - Final conviction: buy or pass?
+
+Automated: Fundamentals, signals, sector context, setup detection
+           (from numbers), news scan — all auto-pulled.
+Your call: Chart pattern, management quality, conviction, buy decision.
+
+
+-------------------------------------------------------------
+SCREEN 4: PORTFOLIO MONITOR
+(Your exit signal tracker)
+-------------------------------------------------------------
+
+Shows all your current holdings. The system checks for the exit
+signals you watch for and groups stocks into three buckets.
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  PORTFOLIO MONITOR                          15 Active Holdings     │
+│  Portfolio Value: ₹32,45,000   |   Overall P&L: +₹8,72,000 (+36%)│
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  STOCK       BOUGHT   CURRENT   P&L%    HELD     STATUS            │
+│  ────────────────────────────────────────────────────────────────── │
+│                                                                     │
+│  HEALTHY — No exit signals                                          │
+│  ──────────────────────────────────────────────────                 │
+│  ABCL Ltd    ₹342     ₹412     +20.5%   3 mo    OK                │
+│  DEF Tech    ₹890     ₹1,045   +17.4%   5 mo    OK                │
+│  GHI Bank    ₹234     ₹267     +14.1%   7 mo    OK                │
+│  ... (8 more)                                                       │
+│                                                                     │
+│  WARNING — Early signals                                            │
+│  ──────────────────────────────────────────────────                 │
+│  MNO Infra   ₹456     ₹501     +9.9%    8 mo    WATCH             │
+│  │ ├ Upper wicks: 2 consecutive weeks                               │
+│  │ ├ Above 30W MA but gap narrowing                                 │
+│  │ └ Infra sector RS turning negative                               │
+│  │                                                                   │
+│  PQR Chem    ₹178     ₹210     +18.0%   6 mo    WATCH             │
+│  │ ├ RS vs Nifty turned negative this week                          │
+│  │ ├ Sector peers weakening                                         │
+│  │ └ Next quarter results due in 2 weeks                            │
+│                                                                     │
+│  ALERT — Review now                                                 │
+│  ──────────────────────────────────────────────────                 │
+│  STU Auto    ₹567     ₹534     -5.8%    9 mo    REVIEW            │
+│  │ ├ Broken below 30W MA (₹545)                                    │
+│  │ ├ Upper wicks: 4 consecutive weeks                               │
+│  │ ├ Support at ₹540 broken                                        │
+│  │ ├ Bad news: Margin guidance cut in Q3                            │
+│  │ ├ Auto sector index broke 52W MA                                 │
+│  │ └ Multiple signals aligned — review this position                │
+│  │                                                                   │
+│  │   [SELL]  [HOLD — I see something different]  [Set Alert]        │
+│                                                                     │
+│  PORTFOLIO HEALTH                                                   │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ Healthy:  11 stocks  (73%)                                   │   │
+│  │ Watch:     2 stocks  (13%)                                   │   │
+│  │ Alert:     1 stock   (7%)                                    │   │
+│  │                                                              │   │
+│  │ Sector concentration:                                        │   │
+│  │   Chemicals: 4 stocks (27%)                                  │   │
+│  │   IT: 3 stocks (20%)                                         │   │
+│  │   Pharma: 2 stocks (13%)                                     │   │
+│  │   Others: 5 stocks (33%)                                     │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+│  MARKET LEVERAGE                                                    │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │ Market-wide margin borrowing: ₹1,02,000 Cr                  │   │
+│  │ 3-month trend: INCREASING                                    │   │
+│  └─────────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+EXIT SIGNALS THE SYSTEM WATCHES FOR:
+
+  Automatically detected from price data:
+  1. Long upper wicks on weekly candles — 3-4 consecutive weeks
+  2. Price breaking below 30-week MA
+  3. Price breaking below 52-week MA
+  4. Price breaking below a previous support level
+  5. Bad news + any of the above technical breakdown
+
+  Tracked but needs your visual confirmation:
+  6. Head & Shoulders forming — system can flag potential formations
+     based on three-peak patterns, but you confirm visually
+
+  Market-level:
+  7. Market-wide margin borrowing elevated and rising
+
+  Fundamental:
+  8. Has the original setup ended?
+     - Earnings surprise: was it one-time?
+     - Supply disruption: has supply normalized?
+     - Sector cycle: is the sector exhausting?
+     - Debt reduction: has it stalled?
+
+  >>> QUESTION: Are these the right exit signals? Anything
+      missing? Anything here you wouldn't use?
+
+Automated: Exit signal detection. Grouping into Healthy/Watch/Alert.
+Your call: Whether to actually sell.
+
+
+-------------------------------------------------------------
+SCREEN 5: WEEKLY BRIEFING
+(Your weekend summary — auto-generated)
+-------------------------------------------------------------
+
+Every Saturday, the system compiles everything from the other 4 screens
+into a summary. This is the "dashboard" you described: what's happening
+in the world, what's happening in India, what's happening in these
+sectors, what's happening in these stocks.
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  WEEKLY BRIEFING                        Week ending: Feb 28, 2026  │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  MARKET PHASE: CAUTIOUSLY BULLISH (unchanged from last week)       │
+│                                                                     │
+│  WORLD                                                              │
+│  US markets up 1.2% on Fed rate hold. Dollar weakening.            │
+│  China stimulus announced, commodity bounce.                        │
+│                                                                     │
+│  INDIA                                                              │
+│  Nifty +0.8%. Midcap outperforming (+1.4%). Breadth healthy —      │
+│  A/D at 2.1. FII selling ₹2,300 Cr, DII bought ₹4,100 Cr.       │
+│                                                                     │
+│  SECTORS                                                            │
+│  IT: Strongest. RS +4.2% vs Nifty.                                 │
+│  Chemicals: Emerging. 3 stocks triggered.                           │
+│  Auto: Weakening. Sector MA broken.                                 │
+│                                                                     │
+│  NEW SIGNALS: 23 stocks triggered                                   │
+│   1. ABCL Ltd (Chemicals) — 8/8 — 14-month breakout               │
+│   2. Navin Fluorine (Chemicals) — 7/8 — sector momentum           │
+│   3. XYZ Pharma — 6/8 — earnings surprise                         │
+│                                                                     │
+│  PORTFOLIO ALERTS                                                   │
+│   STU Auto: Multiple exit signals. Review.                          │
+│   MNO Infra: Upper wicks developing. Watch.                         │
+│                                                                     │
+│  [Open Dashboard]  [View All 23 Signals]  [Review Portfolio]        │
+└─────────────────────────────────────────────────────────────────────┘
+
+Delivered via: In-app + WhatsApp message (optional) + Email (optional)
+Automated: 100%. Generated by AI from the week's data.
+
+
+HOW EACH OF YOUR 8 SETUPS IS DETECTED
+========================================
+
+Not all setups can be detected the same way. Here's what the system
+can do for each one, and where it can't.
+
+  SETUP                     HOW DETECTED                  LIMITATION
+  ─────────────────────────────────────────────────────────────────────
+  1. Earnings surprise      Compare quarterly profit       None — pure
+                            YoY and QoQ. Flag jumps        math from
+                            of 50%+. Cross-check with      quarterly data.
+                            revenue to filter one-time
+                            items.
+
+  2. Debt reduction         Compare total debt across      None — pure
+                            last 4-6 quarters. Flag        math from
+                            consistent decline.            balance sheet.
+
+  3. Margin expansion /     ROCE trending up. Operating    None — pure
+     Balance sheet          margin expanding. Cash flow    math.
+     improvement            from operations improving.
+
+  4. Sector of the cycle    Multiple stocks in same        None — derived
+                            sector triggering volume +     from scanner
+                            price signals in same week.    data.
+                            Sector index RS rising.
+
+  5. Business mix change    Flag if margins expanding      Segment-level
+                            while revenue flat — hints     revenue not
+                            at mix shift. But can't        available via
+                            confirm without segment data.  API. Manual
+                                                           check needed.
+
+  6. Management change      Scan NSE exchange filings      Depends on
+                            and news for board changes,    news coverage.
+                            key appointments.              May miss some.
+
+  7. Forced buying/selling  Index rebalancing: from NSE    Promoter issues,
+                            announcements. Bulk/block      fund redemptions
+                            deals: from NSE daily data.    depend on news.
+
+  8. Supply disruption      Scan news for factory          Depends on
+                            shutdowns, trade restrictions, news coverage.
+                            natural disasters. Match to    May miss some.
+                            affected Indian companies.
+
+  SUMMARY:
+  Setups 1-4: Detected from numbers. Reliable.
+  Setup 5: Partially detected. Needs manual confirmation.
+  Setups 6-8: Detected from news + exchange filings. Only as good
+              as the news coverage available.
+
+
+WHAT'S AUTOMATED vs WHAT STAYS YOUR CALL
+==========================================
+
+  FULLY AUTOMATED:
+    - Macro dashboard (indices, commodities, FII/DII, breadth, sectors)
+    - Market phase indicator
+    - Volume + price + delivery screening across all stocks
+    - Moving average calculations and crossover detection
+    - Relative strength (stock vs Nifty)
+    - Consolidation detection (range + breakout flag)
+    - Signal scoring
+    - Fundamental data pulls (revenue, margin, debt, ROCE, P/E, promoter)
+    - Exit signal detection (MA breaks, support breaks, upper wicks)
+    - Weekly briefing generation
+
+  SEMI-AUTOMATED (system flags, you validate):
+    - Setup matching from numbers (system says "this looks like an
+      earnings surprise" — you decide if it's sustainable)
+    - Setup matching from news (system surfaces news about management
+      changes, supply disruptions — you interpret)
+    - Head & Shoulders exit flagging (system flags potential, you
+      confirm visually)
+    - Sector cycle detection (system spots multiple peers triggering —
+      you decide if it's a real cycle starting)
+
+  STAYS 100% YOUR CALL:
+    - Chart pattern recognition (cup & handle, darvas box,
+      inverted H&S, VCP)
+    - Management quality assessment
+    - "Operated stock" identification
+    - Network checks
+    - Position sizing
+    - Final buy decisions
+    - Final sell decisions
+
+
+MARKET CONDITION — HOW IT AFFECTS EVERYTHING
+=============================================
+
+  BULL MARKET:
+    - More stocks trigger signals
+    - Higher conviction
+    - More sectors participating
+    - More aggressive sizing
+
+  SIDEWAYS MARKET:
+    - Fewer signals — be selective
+    - Maybe only specific sectors working
+    - Focus on highest-scoring signals only
+
+  BEAR MARKET:
+    - Very few buy signals (that's correct — don't fight it)
+    - Cash is a position
+    - Focus on exit signals for existing holdings
+    - Build watchlist for the recovery
+    - The system naturally generates fewer signals —
+      that itself is the signal
+
+
+THINGS WE NEED YOUR INPUT ON
+===============================
+
+Before we start building, we need your answers on these:
+
+1. DELIVERY THRESHOLD
+   What delivery % do you consider "high" enough to count?
+   We used 50% as a placeholder. What's your number?
+
+2. SCORING SYSTEM
+   We invented the 8-point scoring to rank stocks. Does this match
+   how you'd prioritize? Would you weight some signals more than
+   others? Is anything missing from the score?
+
+3. MARKET PHASE CRITERIA
+   What do you actually look at to decide bull / sideways / bear?
+   We proposed some criteria based on your process but these should
+   come from you.
+
+4. EXIT SIGNAL THRESHOLDS
+   - How many consecutive upper wick weeks before you take it
+     seriously? We used 3-4.
+   - For support levels — how do you identify them? Previous swing
+     lows? Round numbers? We need to know how to calculate this.
+
+5. "HIGH VOLUME + PRICE DOWN"
+   Your Filter 2 mentions that if volume is high but price is DOWN,
+   that's a bad signal. Do you want the system to show these stocks
+   separately as a "watch for breakdown" list?
+
+6. CONSOLIDATION BAND
+   When you say a stock has been consolidating, what price range
+   counts? Within 10%? 15%? 20%? We need a number to program the
+   detection.
+
+7. RELATIVE STRENGTH PERIOD
+   We used 4-week returns (stock vs Nifty) for relative strength.
+   Is 4 weeks the right lookback period for you?
+
+8. ALERTS
+   What do you want to be alerted about on WhatsApp?
+   - New signals above a certain score?
+   - Exit alerts on your portfolio?
+   - Weekly briefing?
+   - All of the above?

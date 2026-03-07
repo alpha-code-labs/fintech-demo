@@ -1,0 +1,121 @@
+{
+  "week_ending": "2026-02-28",
+  "stocks_scanned": 1247,
+  "stocks_triggered": 23,
+  "signals": [
+    {
+      "symbol": "ABCL",
+      "name": "ABCL Ltd",
+      "sector": "Chemicals",
+      "price": 342,
+      "change_pct": 8.2,
+      "vol_vs_avg": 7.3,
+      "delivery_pct": 68,
+      "score": 8,
+      "signals": {
+        "above_30w_ma": true,
+        "above_52w_ma": true,
+        "golden_cross": "10W crossed 30W this week",
+        "rs_vs_nifty_4w": 5.2,
+        "consolidation_months": 14,
+        "sector_strong": true,
+        "peers_triggered": 3
+      }
+    },
+    {
+      "symbol": "NAVINFLUOR",
+      "name": "Navin Fluorine",
+      "sector": "Chemicals",
+      "price": 4120,
+      "change_pct": 7.1,
+      "vol_vs_avg": 6.8,
+      "delivery_pct": 65,
+      "score": 7,
+      "signals": {
+        "above_30w_ma": true,
+        "above_52w_ma": true,
+        "golden_cross": null,
+        "rs_vs_nifty_4w": 4.8,
+        "consolidation_months": 10,
+        "sector_strong": true,
+        "peers_triggered": 3
+      }
+    },
+    {
+      "symbol": "XYZPHARMA",
+      "name": "XYZ Pharma",
+      "sector": "Pharma",
+      "price": 567,
+      "change_pct": 6.1,
+      "vol_vs_avg": 5.8,
+      "delivery_pct": 72,
+      "score": 6,
+      "signals": {
+        "above_30w_ma": true,
+        "above_52w_ma": false,
+        "golden_cross": null,
+        "rs_vs_nifty_4w": 2.1,
+        "consolidation_months": 8,
+        "sector_strong": true,
+        "peers_triggered": 1
+      }
+    },
+    {
+      "symbol": "DEEPAKNTR",
+      "name": "Deepak Nitrite",
+      "sector": "Chemicals",
+      "price": 2340,
+      "change_pct": 6.3,
+      "vol_vs_avg": 5.2,
+      "delivery_pct": 61,
+      "score": 6,
+      "signals": {
+        "above_30w_ma": true,
+        "above_52w_ma": false,
+        "golden_cross": null,
+        "rs_vs_nifty_4w": 3.4,
+        "consolidation_months": 7,
+        "sector_strong": true,
+        "peers_triggered": 3
+      }
+    },
+    {
+      "symbol": "AARTIIND",
+      "name": "Aarti Industries",
+      "sector": "Chemicals",
+      "price": 612,
+      "change_pct": 4.8,
+      "vol_vs_avg": 4.1,
+      "delivery_pct": 58,
+      "score": 5,
+      "signals": {
+        "above_30w_ma": true,
+        "above_52w_ma": false,
+        "golden_cross": null,
+        "rs_vs_nifty_4w": 2.2,
+        "consolidation_months": 6,
+        "sector_strong": true,
+        "peers_triggered": 3
+      }
+    },
+    {
+      "symbol": "PQRSTEEL",
+      "name": "PQR Steel",
+      "sector": "Metal",
+      "price": 189,
+      "change_pct": 5.4,
+      "vol_vs_avg": 6.1,
+      "delivery_pct": 41,
+      "score": 3,
+      "signals": {
+        "above_30w_ma": true,
+        "above_52w_ma": false,
+        "golden_cross": null,
+        "rs_vs_nifty_4w": -1.2,
+        "consolidation_months": 4,
+        "sector_strong": false,
+        "peers_triggered": 0
+      }
+    }
+  ]
+}

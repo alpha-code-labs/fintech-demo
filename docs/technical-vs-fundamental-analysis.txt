@@ -1,0 +1,177 @@
+TECHNICAL ANALYSIS vs FUNDAMENTAL ANALYSIS — Explained Simply
+==============================================================
+
+These are the two main schools of thinking in investing/trading worldwide.
+Every investor uses one or both. Gordon uses both.
+
+
+FUNDAMENTAL ANALYSIS — "Is this company worth buying?"
+======================================================
+
+You're looking at the BUSINESS behind the stock. Like buying a shop — you'd
+check if it makes money, how much debt it has, who runs it.
+
+Standard metrics used worldwide:
+
+EARNINGS & PROFITABILITY
+------------------------
+- Revenue / Sales         — How much money is the company making?
+- Net Profit              — What's left after all expenses?
+- EPS (Earnings Per Share) — Profit divided by number of shares
+- P/E Ratio (Price to Earnings) — Stock price divided by EPS.
+                            Low P/E = "cheap", High P/E = "expensive" (roughly)
+- PEG Ratio               — P/E divided by growth rate. Adjusts for how fast
+                            the company is growing
+- EBITDA                   — Earnings before interest, tax, depreciation,
+                            amortization. Shows operating performance
+- Operating Margin         — What % of revenue is actual operating profit
+- Net Profit Margin        — What % of revenue is final profit
+
+BALANCE SHEET (HEALTH)
+----------------------
+- Debt to Equity Ratio    — How much borrowed money vs own money.
+                            High = risky, Low = safe
+- Current Ratio           — Can the company pay its short-term bills?
+                            Above 1 = yes, Below 1 = trouble
+- Book Value Per Share    — If you sold everything and paid all debts,
+                            what's each share worth?
+- P/B Ratio (Price to Book) — Stock price vs book value.
+                            Below 1 = trading below its asset value
+
+CASH FLOW
+---------
+- Free Cash Flow (FCF)    — Cash left after running the business and
+                            investing. This is REAL money, harder to fake
+- Cash Flow from Operations — Cash generated from actual business,
+                            not investments or loans
+- DCF (Discounted Cash Flow) — We covered this. Future cash flows
+                            discounted to today's value
+
+RETURNS & EFFICIENCY
+--------------------
+- ROE (Return on Equity)  — How much profit from shareholders' money.
+                            Above 15% = generally good
+- ROCE (Return on Capital Employed) — How efficiently is ALL capital
+                            (equity + debt) being used?
+- ROA (Return on Assets)  — How much profit from total assets
+
+GROWTH
+------
+- Revenue Growth Rate     — Is the company growing? How fast?
+- EPS Growth Rate         — Are profits per share increasing?
+- Same Store Sales Growth — For retail: are existing stores selling more?
+
+VALUATION
+---------
+- P/E Ratio               — Most common. "Am I paying too much per rupee
+                            of earnings?"
+- EV/EBITDA               — Enterprise Value to EBITDA. Better than P/E
+                            because it accounts for debt
+- P/S Ratio (Price to Sales) — Used for companies not yet profitable
+                            (startups, high-growth)
+- Dividend Yield          — Annual dividend as % of stock price
+
+
+TECHNICAL ANALYSIS — "When should I buy or sell?"
+=================================================
+
+You're looking at PRICE AND VOLUME patterns on charts. You don't care what
+the company does — you care what the market is doing with the stock.
+
+PRICE-BASED INDICATORS
+-----------------------
+- Moving Averages (MA)    — Average price over a period (10-day, 50-day,
+                            200-day). Shows the trend direction.
+                            Price above MA = uptrend. Below = downtrend.
+- EMA (Exponential MA)    — Same as MA but gives more weight to recent
+                            prices. Reacts faster.
+- Golden Cross            — When short-term MA crosses ABOVE long-term MA.
+                            Bullish signal (Gordon uses this).
+- Death Cross             — When short-term MA crosses BELOW long-term MA.
+                            Bearish signal.
+- Support                 — Price level where stock keeps bouncing UP from.
+                            Like a floor.
+- Resistance              — Price level where stock keeps falling DOWN from.
+                            Like a ceiling.
+- Breakout                — When price pushes through resistance.
+                            Gordon's key signal.
+- 52-Week High/Low        — Highest and lowest price in last year.
+                            Breaking 52-week high = strong momentum.
+
+VOLUME-BASED INDICATORS
+------------------------
+- Volume                  — Number of shares traded. High volume confirms
+                            price moves. Low volume = weak/unreliable move.
+- Delivery Volume         — Shares actually transferred to buyer's account
+                            (not just intraday traded). Gordon specifically
+                            tracks this — it shows real conviction.
+- OBV (On Balance Volume) — Running total of volume on up vs down days.
+                            Rising OBV = accumulation. Falling = distribution.
+- Volume Spike            — Sudden jump in trading volume. Gordon's first
+                            filter: weekly volume 5x annual average.
+
+MOMENTUM INDICATORS
+--------------------
+- RSI (Relative Strength Index) — 0 to 100 scale. Above 70 = overbought
+                            (might fall). Below 30 = oversold (might rise).
+- MACD                    — Moving Average Convergence Divergence. Shows
+                            momentum shifts. Signal line crossover = trade signal.
+- Relative Strength       — How a stock performs vs the overall market.
+                            Outperforming = strong. Gordon uses this.
+- Stochastic Oscillator   — Similar to RSI but compares closing price to
+                            price range over a period.
+
+CHART PATTERNS (Gordon uses these specifically)
+-----------------------------------------------
+- Cup and Handle          — Price drops, rounds out, comes back up (the cup),
+                            small dip (handle), then breaks out. Bullish.
+- Inverted Head & Shoulders — Three bottoms, middle one deepest. When price
+                            breaks above the "neckline" = reversal signal.
+- Darvas Box              — Stock trades in a tight range (box). When it
+                            breaks above the box on volume = buy signal.
+                            Nicolas Darvas invented this in the 1950s.
+- Minervini Volatility    — Stock's price range gets tighter and tighter
+  Contraction Pattern       (volatility shrinks). Like a spring compressing.
+  (VCP)                     When it breaks out = explosive move.
+                            Mark Minervini popularized this.
+- Head & Shoulders        — Opposite of inverted. Three peaks, middle one
+                            highest. Breaking neckline = sell signal.
+                            Gordon uses this as an EXIT signal.
+- Consolidation           — Price moves sideways in a range for 6+ months.
+                            Gordon's key setup — breakout from long
+                            consolidation = something has changed.
+
+CANDLESTICK PATTERNS
+---------------------
+- Long Upper Wick         — Price went up during the day/week but sellers
+                            pushed it back down. Signals selling pressure.
+                            Gordon watches for 3-4 weeks of these as EXIT signal.
+- Doji                    — Open and close nearly equal. Market is undecided.
+- Engulfing Pattern       — One candle completely covers the previous one.
+                            Signals reversal.
+
+MARKET BREADTH (Gordon uses these)
+-----------------------------------
+- Advance/Decline Ratio   — How many stocks going up vs down on a given day.
+                            More advancing = healthy market.
+- 52-Week Highs vs Lows   — How many stocks hitting new highs vs new lows.
+                            Tells you where the market strength really is.
+- Sector Rotation         — Which sectors are leading and which are lagging.
+                            Money moves from sector to sector in cycles.
+
+
+GORDON'S APPROACH — COMBINING BOTH
+====================================
+
+Step 1: Technical signals FIRST (volume spike, breakout, moving averages)
+        → "Something is happening with this stock"
+
+Step 2: Fundamental check SECOND (revenue growth, margin change, debt reduction)
+        → "Here's WHY something is happening"
+
+Step 3: Technical signals for EXIT (upper wicks, head & shoulders, MA breaks)
+        → "The party is over, time to leave"
+
+Most investors do it the other way — find a good company first, then check
+the chart. Gordon flips it: find unusual price/volume activity first, then
+check if the fundamentals support it. That's his edge.

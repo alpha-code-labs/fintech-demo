@@ -1,0 +1,300 @@
+GORDON'S 8 FUNDAMENTAL SETUPS — Explained With Examples
+=========================================================
+
+These are NOT "buy this type of company" rules. These are SITUATIONS
+that cause a stock's fundamentals to change. Gordon looks for these
+AFTER the technical signals (volume spike + breakout) have already
+flagged the stock. The setup answers the question: "WHY is this
+stock moving?"
+
+
+SETUP 1: BUSINESS MIX CHANGE
+------------------------------
+
+What it means:
+A company shifts its revenue from a low-growth or low-margin business
+to a high-growth or high-margin one.
+
+Example:
+Imagine a company that makes 80% of its revenue from selling basic
+steel pipes (5% margin) and 20% from selling specialty stainless steel
+pipes for pharma companies (25% margin).
+
+Over 2-3 years, the specialty business grows to 50% of revenue.
+Total revenue might be the same, but profits double because the
+mix shifted to the higher-margin product.
+
+The stock has been consolidating because nobody noticed — revenue
+didn't change. But margins are quietly expanding. One quarter the
+profit jumps 40% and the market suddenly wakes up.
+
+Real-world parallel: Think of a company like Deepak Nitrite — started
+as a basic chemical company, shifted mix to value-added specialty
+chemicals. Stock went from 200 to 2000+ as the market recognized
+the mix change.
+
+How to spot it: Quarter-on-quarter segment revenue breakdown.
+If a high-margin segment is growing faster than the overall
+company, the mix is shifting.
+
+
+SETUP 2: MANAGEMENT CHANGE
+-----------------------------
+
+What it means:
+New CEO, new promoter, or new management team comes in. Market gets
+hopeful that things will change.
+
+Example:
+A company has been poorly run for years. Promoter's son takes over,
+or a professional CEO is hired from a successful company. Even
+before any results show up, the SENTIMENT changes. Investors think
+"maybe now things will improve." The stock starts moving on hope.
+
+The smart play is: don't buy on the management change announcement
+alone. Wait for the volume spike + breakout to confirm that serious
+money agrees with the hope. Then check if the new management is
+actually doing anything different — cutting costs, launching new
+products, reducing debt.
+
+Real-world parallel: Think of Tata Motors when they brought focus
+back on Indian business and EVs. Or any company where a known
+turnaround specialist takes charge.
+
+How to spot it: News, exchange filings, board meeting announcements.
+This is one where Google/AI news scanning helps.
+
+
+SETUP 3: SECTOR OF THE CYCLE
+-------------------------------
+
+What it means:
+An entire sector starts doing well because of macro/fundamental
+reasons. The market starts treating all companies in that sector
+as winners.
+
+Example:
+Government announces a massive infrastructure spending plan.
+First, L&T moves (the leader). Then mid-cap infra companies.
+Then small-cap contractors. Then building material companies.
+Then cement companies. The money cascades down.
+
+Investors who can't buy L&T (too expensive, already run up)
+start buying the "followers" — smaller companies in the same
+sector. This is called "relative valuation" — if L&T trades
+at 30x PE, then this smaller infra company at 15x PE looks
+"cheap" in comparison.
+
+Gordon's examples from the document:
+- Telecom in late 90s
+- IT services in 2000s
+- Infrastructure in mid 2000s
+- Consumer stocks in late 2000s
+- Pharma in mid 2010s
+- NBFCs in mid 2010s
+- Chemical stocks in late 2010s
+- Tech stocks during Covid
+- Capital goods post Covid
+- PSU stocks in 2023
+- Solar stocks in 2024
+
+ALL OF THEM STARTED AND ALL OF THEM ENDED.
+
+The game: Get in when the sector is showing early signs of
+strength (volume + breakouts across multiple stocks in the
+sector). Get out when the exit signals appear (covered later).
+
+How to spot it: Sector indices showing relative strength.
+Multiple stocks in the same sector triggering volume spikes
+and breakouts simultaneously.
+
+
+SETUP 4: FORCED BUYING OR SELLING
+------------------------------------
+
+What it means:
+Someone is buying or selling NOT because of the company's
+fundamentals, but because they HAVE TO.
+
+FORCED BUYING examples:
+- Index inclusion: When a stock gets added to Nifty 50 or
+  Nifty Next 50, every ETF and index fund that tracks that
+  index MUST buy the stock. Regardless of price. That's
+  billions of rupees of forced buying.
+- Sector index inclusion: Same thing at sector level.
+
+FORCED SELLING examples:
+- A mutual fund manager's strategy says "only large caps."
+  A stock drops out of large-cap classification. They MUST
+  sell. Not because the company is bad — because the rules
+  say so.
+- A promoter gets arrested for a personal reason (tax raid,
+  family dispute). Institutional investors panic-sell because
+  of compliance rules. Company fundamentals haven't changed.
+- A fund is shutting down or facing redemptions. They sell
+  their best stocks because those have the most liquidity.
+  Not because the stocks are bad — because they need cash.
+
+Why this is a setup:
+Forced selling creates artificially depressed prices. The
+stock drops not because the business got worse but because
+someone was forced to dump shares. If you can identify this,
+you're buying a good company at a discount created by
+someone else's problem.
+
+How to spot it: Index rebalancing announcements (NSE publishes
+these), news about promoter issues, mutual fund portfolio
+disclosures, bulk deal data on exchanges.
+
+
+SETUP 5: SUDDEN AND BIG EARNINGS SURPRISE
+--------------------------------------------
+
+What it means:
+A company reports quarterly results that are WAY above what
+anyone expected. Not 10% better — 50-100% better.
+
+Example:
+A mid-cap pharma company has been doing Rs 50 crore profit
+per quarter for 2 years. Suddenly they report Rs 120 crore.
+What happened? Maybe a new drug got approved, maybe they won
+a big contract, maybe raw material costs crashed.
+
+The momentum crowd (traders, algo funds, social media) jumps
+in immediately. The stock can move 30-100% in days.
+
+But here's the key question Gordon asks: is this SUSTAINABLE
+or a one-time thing?
+
+- One-time insurance claim boosted profit? Not sustainable.
+  Skip.
+- New product line that will keep generating revenue?
+  Sustainable. Dig deeper.
+- Commodity price crash reduced costs? Check if the price
+  crash will last.
+
+How to spot it: Quarterly results on exchanges. Compare
+current quarter profit vs same quarter last year AND vs
+previous quarter. A massive jump = earnings surprise.
+Screener.in shows this data clearly.
+
+
+SETUP 6: DEBT REDUCTION
+--------------------------
+
+What it means:
+A company is paying off its debt significantly. Gordon says
+"Debt is the only real number on a balance sheet" — meaning
+revenue and profit can be window-dressed with accounting
+tricks, but debt is hard to fake. If it's going down,
+real cash is being generated or infused.
+
+Example:
+A company has Rs 500 crore of debt. Over 3 quarters, it
+drops to Rs 300 crore. That Rs 200 crore came from somewhere —
+either the business is generating serious cash flow, or a
+new investor put money in.
+
+Either way, something has changed:
+- Less debt = less interest payment = higher profits going forward
+- Less debt = less risk = market gives higher valuation multiple
+- Less debt = more cash available for growth
+
+This is the "quietest" signal because debt reduction doesn't
+make headlines. Revenue growth does. But debt reduction is
+often more meaningful.
+
+Real-world parallel: Think of companies post-IBC resolution
+(Insolvency and Bankruptcy Code). Companies like Tata Steel
+acquiring Bhushan Steel — massive debt was restructured.
+The stock re-rated significantly as debt came under control.
+
+How to spot it: Compare total debt across last 4-6 quarters
+on Screener.in. A consistent downward trend is the signal.
+
+
+SETUP 7: BALANCE SHEET IMPROVEMENT
+-------------------------------------
+
+What it means:
+The company is using its assets and capital more efficiently.
+Not just debt reduction — but overall getting leaner and meaner.
+
+The two key metrics:
+- Asset turnover: Revenue divided by total assets. If this is
+  going up, the company is squeezing more revenue from the same
+  assets. Like a restaurant serving more customers with the same
+  kitchen.
+- Working capital improvement: Less money stuck in inventory,
+  faster collection from customers, better management of
+  supplier payments. This RELEASES CASH without the company
+  needing to borrow or raise money.
+
+Example:
+A manufacturing company used to keep 90 days of inventory.
+New management brings it down to 45 days. That's months of
+production cost freed up as cash. The P&L might look similar
+but the cash flow statement shows a big jump. And ROCE
+(Return on Capital Employed) improves — which is what
+sophisticated investors look at.
+
+How to spot it: ROCE trending upwards over quarters.
+Working capital days (inventory + receivable - payable days)
+going down. Cash flow from operations improving even if
+revenue is flat.
+
+
+SETUP 8: SUPPLY DISRUPTIONS
+------------------------------
+
+What it means:
+Something happens that reduces the supply of a product.
+Demand stays the same or increases. Prices shoot up.
+Companies in that industry make super-normal profits.
+
+Example:
+China shuts down chemical factories for environmental
+reasons. India is the next biggest producer. Suddenly,
+Indian chemical companies are getting orders at 2-3x
+the normal price. Their costs haven't changed but their
+selling price has doubled. Profits explode.
+
+Or: A cyclone hits the coast and disrupts shipping routes.
+Freight rates spike. Shipping companies that were barely
+profitable suddenly report record earnings.
+
+Or: Russia-Ukraine war disrupts gas supply. European
+energy prices spike. Any company that produces or trades
+energy makes windfall profits.
+
+The catch: Supply disruptions are usually TEMPORARY.
+The super-normal profits last 2-6 quarters. Then supply
+normalizes, new capacity comes online, prices fall, and
+the party is over. Gordon would ride this wave but watch
+closely for exit signals.
+
+How to spot it: Commodity price spikes, news about factory
+shutdowns or natural disasters affecting production, trade
+restrictions or sanctions. Cross-reference with which Indian
+companies benefit from that specific commodity.
+
+
+HOW GORDON USES THESE SETUPS
+===============================
+
+He's NOT scanning for all 8 at all times. The process is:
+
+1. Volume spike + breakout flags a stock (technical filter)
+2. He asks: "WHY is this moving?"
+3. He checks if the answer fits one of these 8 setups
+4. If yes — the move has fundamental backing. Dig deeper.
+5. If no — the move might be speculation. Be cautious.
+
+The setups also tell him HOW the story might end:
+- Earnings surprise → check if it's sustainable or one-time
+- Supply disruption → usually temporary, watch for normalization
+- Sector of the cycle → all cycles end, watch for sector exhaustion
+- Forced selling → temporary dip, should recover once selling stops
+
+That's what he means by "boundary conditions" — the setup tells
+you not just why it started, but gives clues about when it might end.

@@ -1,0 +1,62 @@
+{
+  "total_holdings": 15,
+  "portfolio_value": 3245000,
+  "total_pnl": 872000,
+  "total_pnl_pct": 36.7,
+  "holdings": {
+    "healthy": [
+      {"symbol": "ABCL", "name": "ABCL Ltd", "sector": "Chemicals", "buy_price": 342, "current_price": 412, "pnl_pct": 20.5, "held_months": 3, "signals": []},
+      {"symbol": "DEFTECH", "name": "DEF Tech", "sector": "IT", "buy_price": 890, "current_price": 1045, "pnl_pct": 17.4, "held_months": 5, "signals": []},
+      {"symbol": "GHIBANK", "name": "GHI Bank", "sector": "Banking", "buy_price": 234, "current_price": 267, "pnl_pct": 14.1, "held_months": 7, "signals": []},
+      {"symbol": "JKLPHARMA", "name": "JKL Pharma", "sector": "Pharma", "buy_price": 456, "current_price": 512, "pnl_pct": 12.3, "held_months": 4, "signals": []},
+      {"symbol": "RSTITECH", "name": "RST IT", "sector": "IT", "buy_price": 1200, "current_price": 1380, "pnl_pct": 15.0, "held_months": 6, "signals": []},
+      {"symbol": "UVWCHEM", "name": "UVW Chem", "sector": "Chemicals", "buy_price": 178, "current_price": 205, "pnl_pct": 15.2, "held_months": 5, "signals": []},
+      {"symbol": "EFGINFRA", "name": "EFG Infra", "sector": "Infra", "buy_price": 321, "current_price": 367, "pnl_pct": 14.3, "held_months": 4, "signals": []},
+      {"symbol": "HIJPSU", "name": "HIJ PSU", "sector": "PSU", "buy_price": 89, "current_price": 101, "pnl_pct": 13.5, "held_months": 3, "signals": []},
+      {"symbol": "KLMFMCG", "name": "KLM FMCG", "sector": "FMCG", "buy_price": 567, "current_price": 623, "pnl_pct": 9.9, "held_months": 8, "signals": []},
+      {"symbol": "NOPCHEM", "name": "NOP Chem", "sector": "Chemicals", "buy_price": 234, "current_price": 271, "pnl_pct": 15.8, "held_months": 5, "signals": []},
+      {"symbol": "QRSIT", "name": "QRS IT", "sector": "IT", "buy_price": 678, "current_price": 745, "pnl_pct": 9.9, "held_months": 4, "signals": []}
+    ],
+    "warning": [
+      {
+        "symbol": "MNOINFRA", "name": "MNO Infra", "sector": "Infra", "buy_price": 456, "current_price": 501, "pnl_pct": 9.9, "held_months": 8,
+        "signals": [
+          "Upper wicks: 2 consecutive weeks",
+          "Above 30W MA but gap narrowing",
+          "Infra sector RS turning negative"
+        ]
+      },
+      {
+        "symbol": "PQRCHEM", "name": "PQR Chem", "sector": "Chemicals", "buy_price": 178, "current_price": 210, "pnl_pct": 18.0, "held_months": 6,
+        "signals": [
+          "RS vs Nifty turned negative this week",
+          "Sector peers weakening",
+          "Next quarter results due in 2 weeks"
+        ]
+      }
+    ],
+    "alert": [
+      {
+        "symbol": "STUAUTO", "name": "STU Auto", "sector": "Auto", "buy_price": 567, "current_price": 534, "pnl_pct": -5.8, "held_months": 9,
+        "signals": [
+          "Broken below 30W MA (545)",
+          "Upper wicks: 4 consecutive weeks",
+          "Support at 540 broken",
+          "Bad news: Margin guidance cut in Q3",
+          "Auto sector index broke 52W MA"
+        ]
+      }
+    ]
+  },
+  "sector_concentration": [
+    {"sector": "Chemicals", "count": 4, "pct": 27},
+    {"sector": "IT", "count": 3, "pct": 20},
+    {"sector": "Pharma", "count": 1, "pct": 7},
+    {"sector": "Infra", "count": 2, "pct": 13},
+    {"sector": "Others", "count": 5, "pct": 33}
+  ],
+  "market_leverage": {
+    "margin_borrowing_cr": 102000,
+    "trend_3m": "INCREASING"
+  }
+}

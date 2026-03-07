@@ -1,0 +1,120 @@
+TRADED VOLUME vs DELIVERY VOLUME — A Story
+=============================================
+
+THE FISH MARKET ANALOGY
+------------------------
+
+Imagine you're standing outside Crawford Market in Mumbai watching the fish
+section. You want to figure out which fish is suddenly in high demand today.
+
+You see 1,000 kg of pomfret changing hands throughout the day. That's TRADED
+VOLUME — the total amount that was bought and sold.
+
+But here's the catch — some of those traders are just middlemen. They buy
+pomfret at 8 AM, sell it at 10 AM to another middleman, who sells it at
+12 PM to a restaurant. That same 10 kg of fish got "traded" 3 times. The
+traded volume says 30 kg, but only 10 kg actually left the market.
+
+DELIVERY VOLUME is the fish that actually went home with someone. The buyer
+said "I want this, I'm keeping it." They walked out of the market with it.
+
+IN STOCK MARKET TERMS
+----------------------
+
+On NSE/BSE, when you buy a stock, you can either:
+
+(a) TAKE DELIVERY — the shares actually move into your demat account.
+    You own them. You're an investor. You believe in this stock enough
+    to hold it.
+
+(b) TRADE INTRADAY — you buy at 10 AM, sell at 2 PM. The shares never
+    enter your demat account. You're a speculator. You just want to
+    profit from today's price movement.
+
+TRADED VOLUME = all shares that changed hands (both types combined)
+DELIVERY VOLUME = only the shares that actually moved to someone's
+                  demat account (type a)
+
+EXAMPLE: TWO STOCKS ON THE SAME DAY
+-------------------------------------
+
+Stock A: Tata Motors
+- Traded volume: 50 lakh shares
+- Delivery volume: 5 lakh shares (10% delivery)
+- Price up 3%
+
+What happened: Mostly intraday traders playing the stock. Buying and
+selling within the day. Only 10% actually wanted to OWN the stock.
+The 3% move is unreliable — it could reverse tomorrow because there's
+no real conviction behind it. Just noise.
+
+Stock B: Some mid-cap chemical company
+- Traded volume: 20 lakh shares (normally trades 2 lakh/day)
+- Delivery volume: 14 lakh shares (70% delivery)
+- Price up 8%
+
+What happened: Volume is 10x normal. AND 70% of buyers actually took
+delivery — they want to OWN this stock. Someone with serious money
+is accumulating. They know something. This is a SIGNAL.
+
+THIS IS WHAT GORDON LOOKS FOR.
+
+WHY DELIVERY VOLUME MATTERS MORE
+----------------------------------
+
+Think about it like real estate.
+
+If 100 people visit a flat in Gurgaon on a Sunday — that's "traded volume."
+Lots of activity. Looks hot.
+
+But if only 2 people put down a token — that's "delivery volume."
+The 98 others were just window shopping.
+
+Now imagine another flat in a random part of Noida. Normally gets 5 visitors
+a week. Suddenly 40 people show up and 30 put down a token. THAT is the
+signal. Something changed. Maybe a metro line got approved. Maybe a big
+company is setting up office nearby. You don't know WHY yet, but the
+delivery data tells you something real is happening.
+
+GORDON'S SPECIFIC FILTER
+--------------------------
+
+He scans for stocks where:
+1. Weekly traded volume is 5x the annual average
+   (something unusual is happening)
+2. Price has jumped 5-10% alongside this volume
+   (the move is significant, not just noise)
+
+He uses WEEKLY charts because:
+- Daily is too noisy — one day of high volume could mean anything
+- Monthly is too slow — by the time monthly data confirms, the move
+  is already well underway
+- Weekly is the sweet spot — filters out daily noise but catches
+  trends early enough
+
+And within that volume, DELIVERY volume is what he cares about most.
+Because that tells you: are people actually putting their money where
+their mouth is?
+
+A stock spiking on high traded volume but low delivery = traders playing
+games, will reverse.
+
+A stock spiking on high traded volume AND high delivery = someone is
+accumulating with conviction. Pay attention.
+
+WHERE TO FIND THIS DATA
+-------------------------
+- NSE website publishes delivery volume data daily
+- Screener.in shows volume data
+- TradingView shows traded volume on charts
+- Some brokers (Zerodha, etc.) show delivery percentage in their tools
+
+THIS IS THE FIRST STEP IN GORDON'S SYSTEM
+-------------------------------------------
+Everything else — breakout patterns, fundamental analysis, sector
+rotation — comes AFTER this filter. If a stock doesn't pass the
+volume + price test, Gordon doesn't even look at it. No matter
+how good the company is.
+
+That's what he means by "the pool from which we will fish."
+No volume spike = not in the pool = doesn't exist for him.

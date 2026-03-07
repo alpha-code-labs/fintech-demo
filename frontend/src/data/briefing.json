@@ -1,0 +1,22 @@
+{
+  "week_ending": "2026-02-28",
+  "market_phase": "CAUTIOUSLY BULLISH",
+  "market_phase_change": "unchanged",
+  "world": "US markets up 1.2% on Fed rate hold. Dollar weakening. China stimulus announced, commodity bounce.",
+  "india": "Nifty +0.8%. Midcap outperforming (+1.4%). Breadth healthy — A/D at 2.1. FII selling Rs 2,300 Cr, DII bought Rs 4,100 Cr.",
+  "sectors": [
+    {"name": "IT", "note": "Strongest. RS +4.2% vs Nifty."},
+    {"name": "Chemicals", "note": "Emerging. 3 stocks triggered."},
+    {"name": "Auto", "note": "Weakening. Sector MA broken."}
+  ],
+  "new_signals_count": 23,
+  "top_signals": [
+    {"symbol": "ABCL", "name": "ABCL Ltd", "sector": "Chemicals", "score": 8, "note": "14-month breakout"},
+    {"symbol": "NAVINFLUOR", "name": "Navin Fluorine", "sector": "Chemicals", "score": 7, "note": "sector momentum"},
+    {"symbol": "XYZPHARMA", "name": "XYZ Pharma", "sector": "Pharma", "score": 6, "note": "earnings surprise"}
+  ],
+  "portfolio_alerts": [
+    {"symbol": "STUAUTO", "name": "STU Auto", "level": "alert", "note": "Multiple exit signals. Review."},
+    {"symbol": "MNOINFRA", "name": "MNO Infra", "level": "warning", "note": "Upper wicks developing. Watch."}
+  ]
+}

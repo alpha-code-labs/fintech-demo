@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-03",
+  "market_phase": {
+    "label": "CAUTIOUSLY BULLISH",
+    "reason": "Breadth healthy, midcaps leading, FII selling but DII absorbing"
+  },
+  "world_indices": [
+    {"name": "S&P 500", "value": 5234, "change_pct": 0.8},
+    {"name": "Nasdaq", "value": 16432, "change_pct": 1.2},
+    {"name": "FTSE 100", "value": 7612, "change_pct": -0.2},
+    {"name": "Nikkei 225", "value": 38456, "change_pct": 0.5},
+    {"name": "Shanghai", "value": 3012, "change_pct": -0.4}
+  ],
+  "commodities": [
+    {"name": "Gold", "value": 2145, "unit": "$", "change_pct": 0.3},
+    {"name": "Crude Oil", "value": 78, "unit": "$", "change_pct": -1.1},
+    {"name": "Silver", "value": 24, "unit": "$", "change_pct": 0.5},
+    {"name": "Copper", "value": 8900, "unit": "$", "change_pct": 0.7},
+    {"name": "Natural Gas", "value": 2.1, "unit": "$", "change_pct": -2.3}
+  ],
+  "macro_indicators": {
+    "dxy": {"value": 104.2, "change_pct": 0.1},
+    "us_10y": {"value": 4.32},
+    "india_10y": {"value": 7.12},
+    "inr_usd": {"value": 83.45},
+    "fii_flow_mtd": -2345,
+    "dii_flow_mtd": 4567
+  },
+  "indian_indices": [
+    {"name": "Nifty 50", "value": 22345, "change_pct": 0.6, "dist_from_52w_high": -3.2},
+    {"name": "Bank Nifty", "value": 47234, "change_pct": 0.3, "dist_from_52w_high": -5.1},
+    {"name": "Nifty Midcap", "value": 32456, "change_pct": 1.1, "dist_from_52w_high": -1.8},
+    {"name": "Nifty Smallcap", "value": 11234, "change_pct": 1.4, "dist_from_52w_high": -7.2}
+  ],
+  "market_depth": {
+    "advancing": 342,
+    "declining": 158,
+    "ad_ratio": 2.16,
+    "highs_52w": 47,
+    "lows_52w": 12,
+    "hl_ratio": 3.9
+  },
+  "sector_heatmap": [
+    {"name": "IT", "change_pct": 2.1, "rs_vs_nifty_4w": 4.2},
+    {"name": "Pharma", "change_pct": 1.8, "rs_vs_nifty_4w": 3.1},
+    {"name": "Auto", "change_pct": 1.2, "rs_vs_nifty_4w": 1.8},
+    {"name": "PSU", "change_pct": 0.9, "rs_vs_nifty_4w": 0.4},
+    {"name": "FMCG", "change_pct": 0.1, "rs_vs_nifty_4w": -0.5},
+    {"name": "Realty", "change_pct": -0.3, "rs_vs_nifty_4w": -1.1},
+    {"name": "Energy", "change_pct": -0.5, "rs_vs_nifty_4w": -1.8},
+    {"name": "Media", "change_pct": -0.8, "rs_vs_nifty_4w": -2.1},
+    {"name": "Metal", "change_pct": -1.2, "rs_vs_nifty_4w": -3.4}
+  ]
+}

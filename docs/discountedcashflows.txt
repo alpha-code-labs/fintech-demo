@@ -1,0 +1,65 @@
+DISCOUNTED CASH FLOWS (DCF) — Explained Simply
+================================================
+
+Imagine you have a friend who says: "I'll give you Rs 1,000 one year from now."
+
+Is that Rs 1,000 worth Rs 1,000 to you TODAY? No. Because if you had Rs 1,000 today,
+you could put it in a bank and earn interest. In a year, it would be Rs 1,060 (at 6% interest).
+
+So Rs 1,000 coming one year later is actually worth only about Rs 943 today.
+That's called the "present value" of future money.
+
+WHAT IS DCF?
+------------
+DCF is a way to figure out what a company is worth TODAY by looking at all the money
+it will make in the FUTURE and asking: "What is all that future money worth right now?"
+
+Step 1: Estimate how much cash the company will generate every year for the next
+        5, 10, or 20 years.
+
+Step 2: "Discount" each year's cash — meaning reduce its value because money later
+        is worth less than money now.
+
+Step 3: Add up all those discounted amounts. That total is what the company is
+        "intrinsically" worth today.
+
+SIMPLE EXAMPLE
+--------------
+A chai stall makes Rs 1,00,000 profit per year. You expect it to run for 5 years.
+
+Year 1: Rs 1,00,000 --> discounted to Rs 94,300 today
+Year 2: Rs 1,00,000 --> discounted to Rs 89,000 today
+Year 3: Rs 1,00,000 --> discounted to Rs 83,900 today
+Year 4: Rs 1,00,000 --> discounted to Rs 79,200 today
+Year 5: Rs 1,00,000 --> discounted to Rs 74,700 today
+
+Total (DCF value) = Rs 4,21,100
+
+So this chai stall is "worth" about Rs 4.2 lakhs today. If someone is selling it
+for Rs 3 lakhs — it's a bargain. If they want Rs 6 lakhs — it's overpriced.
+
+THE "DISCOUNT RATE"
+-------------------
+The percentage you use to reduce future money is called the discount rate.
+It basically answers: "What return could I get if I put my money somewhere else instead?"
+
+- If bank gives 6%, your discount rate is at least 6%
+- If you want 15% return (because stocks are risky), you use 15%
+- Higher discount rate = future cash is worth LESS today = company is worth LESS
+
+WHY GORDON SAYS DCF IS BROKEN
+------------------------------
+Gordon's point: the discount rate used to be somewhat stable and predictable.
+But now:
+
+- Governments print money (low interest rates mess up the discount rate)
+- Foreign money flows in and out of India (capital flows change valuations overnight)
+- SIP investors and mutual funds HAVE to invest money every month regardless of
+  valuations (forced buying pushes prices above what DCF says they're worth)
+
+So a stock might be "worth" Rs 500 by DCF, but trades at Rs 900 because there's
+too much money chasing too few good stocks. The DCF says it's overpriced.
+The market doesn't care.
+
+That's why Gordon says relying only on fundamental analysis (DCF) is like
+"working with half the toolkit."

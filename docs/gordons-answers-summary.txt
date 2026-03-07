@@ -1,0 +1,70 @@
+GORDON'S ANSWERS — SUMMARY
+===========================
+
+SCOPE
+-----
+- Indian markets only (NSE/BSE)
+- International via mutual funds (TDS friction)
+- Currently scans CNX 500, wants to expand to anything above 500 Cr market cap
+- System works for anything tradeable with price + volume data
+- Weekly charts to cut through noise
+- Medium to long term holds (6 month minimum — compliance requirement)
+- But system can be adapted for swing/short term trades
+- Portfolio: 15-25 stocks (15 when aggressive, 25 when diversifying)
+
+CURRENT TOOLS
+-------------
+- TradingView: charts, watchlists (preloaded — world indices, Indian indices,
+  sector indices, companies by groups, macro, commodities, bonds, portfolio)
+- Screener.in: fundamental data and screening
+- Exchange filings: financial statements
+- Google/AI: news, risk-reward framework building
+- Network: qualitative checks, management quality
+- Spreadsheet: portfolio tracking, IRR calculation from contract notes
+
+DAILY WORKFLOW
+--------------
+1. Open TradingView
+2. Scan: Global charts > Macro > India macro > Commodities > Indian indices >
+   Sector indices > CNX 500
+3. Form a point of view, shortlist to a watchlist
+4. Open Screener.in for fundamental setups
+5. Apply human judgment on the shortlist
+
+TIME SPENT
+----------
+- 1 hour daily
+- Few hours on weekends for technical scanning
+- Chart scanning + judgment = biggest time sink
+- Fundamental analysis shortened with AI
+
+WHAT HE WANTS AUTOMATED
+------------------------
+Dashboard output:
+"This is what is happening in the world, this is what is happening in India,
+something is happening in these sectors, something is happening in these stocks.
+These are the charts, this is the fundamentals, here is the AI generated
+risk reward note"
+
+WHAT STAYS HUMAN
+----------------
+- Chart pattern judgment (valid breakout or not)
+- Qualitative factors (management quality, "operated" stocks)
+- Final stock selection from shortlist
+- Position sizing decisions
+- Eliminations at various stages
+
+PERFORMANCE (ACTUAL TRADED CAPITAL)
+------------------------------------
+- IRR calculated from spreadsheet of capital in/out + contract notes
+- Before this system: 14-15% IRR
+- After this system: 25%+ IRR
+- Last 5 years: 35-40% returns to land at 25% since inception
+- Very selective, few trades due to 6-month hold requirement
+
+SCALE
+-----
+- Family capital only
+- Not interested in running a fund (regulatory complexity)
+- Open to managing for a few trusted people with free hand
+- "This system makes enough, why complicate life"
