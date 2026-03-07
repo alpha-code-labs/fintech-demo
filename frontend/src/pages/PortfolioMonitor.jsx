@@ -187,7 +187,7 @@ export default function PortfolioMonitor() {
         sections={[
           {
             heading: 'What this is',
-            body: 'Shows all your current holdings. The system checks for exit signals every day and groups stocks into three buckets: Healthy (no signals), Warning (1-2 early signals), and Alert (MA break or 3+ signals). The system detects — you decide whether to sell.',
+            body: 'Shows all your current holdings. The system checks for exit signals every day and groups stocks into three buckets: Healthy (no signals), Warning (1-2 early signals), and Alert (MA break, bad news, or 3+ signals). The system detects — you decide whether to sell.',
           },
           {
             heading: 'Exit Signals Monitored',
@@ -195,7 +195,7 @@ export default function PortfolioMonitor() {
               'Upper wicks: 3+ consecutive weekly candles with long upper wicks — signals a month of selling pressure',
               'Below 30-week MA: Price has broken below the 30-week moving average — a key support level',
               'Below 52-week MA: Price has broken below the 52-week moving average — a more serious break',
-              'Support break: Price has fallen below its 3-month low',
+              'Support break: Price has fallen below the lowest weekly close of the last 13 weeks',
               'Head & Shoulders: Classic reversal pattern detected from weekly highs',
               'Bad news + technical breakdown: Negative news confirmed by AI, combined with an active technical signal',
             ],

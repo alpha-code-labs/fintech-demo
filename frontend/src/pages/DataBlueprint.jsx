@@ -285,7 +285,7 @@ Gemini 2.0 Flash`}
             ['Net Profit (Cr)', 'quarterly_financials.net_income', 'Same'],
             ['EPS', 'quarterly_financials.eps', 'Same'],
             ['Total Debt (Cr)', 'quarterly_financials.total_debt', 'Same'],
-            ['ROCE %', 'operating_income / (total_assets - current_liabilities) * 100', 'Computed'],
+            ['ROCE %', 'Basic: operating_income / total_assets * 100. Overridden by Screener.in ROCE when available (24h cache)', 'Computed + Screener.in'],
             ['Promoter Holding %', 'promoter_holding (NSE API via nsepython)', 'Quarterly (2nd of Feb/May/Aug/Nov)'],
             ['P/E', 'yfinance trailingPE', 'On-demand, 24h cache'],
             ['Industry P/E', 'yfinance', 'Not reliably available — may show "--"'],
@@ -339,7 +339,7 @@ Gemini 2.0 Flash`}
             ['1', 'Upper wicks (3+ weeks)', '(high - close) / (high - low) > 0.6 for 3+ consecutive weeks', 'stock_ohlc'],
             ['2', 'Below 30W MA', 'current_close < SMA(close, 30 weeks)', 'stock_ohlc'],
             ['3', 'Below 52W MA', 'current_close < SMA(close, 52 weeks)', 'stock_ohlc'],
-            ['4', 'Support break', 'current_close < min(close, last 13 weeks)', 'stock_ohlc'],
+            ['4', 'Support break', 'current_close < min(weekly close, last 13 weeks)', 'stock_ohlc (weekly resample)'],
             ['5', 'Head & Shoulders', '3-peak reversal pattern from weekly highs', 'stock_ohlc'],
             ['6', 'Bad news + breakdown', 'Negative news (AI classified) + active technical signal', 'Google News RSS + Gemini LLM'],
           ]}
@@ -352,7 +352,7 @@ Gemini 2.0 Flash`}
           rows={[
             ['Healthy', '0 exit signals', 'No action needed'],
             ['Warning', '1-2 signals (no MA break, < 3 total)', 'Watch closely'],
-            ['Alert', 'MA break (30W or 52W) OR 3+ signals', 'Review position now'],
+            ['Alert', 'MA break (30W or 52W) OR bad news signal OR 3+ signals', 'Review position now'],
           ]}
         />
       </InfoAccordion>

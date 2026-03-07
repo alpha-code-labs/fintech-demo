@@ -269,7 +269,7 @@ Gemini 2.0 Flash
 | Net Profit (Cr) | `quarterly_financials.net_income` | PAT from yfinance |
 | EPS | `quarterly_financials.eps` | Earnings per share from yfinance |
 | Total Debt (Cr) | `quarterly_financials.total_debt` | Color inverted — decrease is green |
-| ROCE % | Computed | `operating_income / (total_assets - current_liabilities) * 100` |
+| ROCE % | Computed + Screener.in | Basic: `operating_income / total_assets * 100`. Overridden by Screener.in ROCE when available (24h cache) |
 | Promoter Holding % | `promoter_holding.promoter_pct` | From NSE API via nsepython |
 | Quarter labels | Computed | Indian FY format: Q1 FY26 = Apr-Jun 2025 |
 | YoY Change | Computed | `(latest_quarter - year_ago_quarter) / abs(year_ago_quarter) * 100` |
@@ -317,7 +317,7 @@ Gemini 2.0 Flash
 
 | Bucket | Criteria | Visual |
 |---|---|---|
-| Alert | MA break (below 30W or 52W) OR 3+ signals active | Red border, "REVIEW" status |
+| Alert | MA break (below 30W or 52W) OR bad news signal OR 3+ signals active | Red border, "REVIEW" status |
 | Warning | 1-2 signals active (but no MA break and < 3 total) | Amber border, "WATCH" status |
 | Healthy | 0 exit signals | No border, no status badge |
 
@@ -343,7 +343,7 @@ Gemini 2.0 Flash
 | 1 | Upper wicks (3+ consecutive weeks) | `stock_ohlc` | `(high - close) / (high - low) > 0.6` for 3+ consecutive weeks |
 | 2 | Below 30W MA | `stock_ohlc` | `current_close < SMA(close, 30 weeks)` |
 | 3 | Below 52W MA | `stock_ohlc` | `current_close < SMA(close, 52 weeks)` |
-| 4 | Support break (3-month low) | `stock_ohlc` | `current_close < min(close, last 13 weeks)` |
+| 4 | Support break (13-week low) | `stock_ohlc` (weekly resample) | `current_close < min(weekly close, last 13 weeks)` |
 | 5 | Head & Shoulders | `stock_ohlc` | 3-peak reversal pattern detection from weekly highs |
 | 6 | Bad news + technical breakdown | Google News RSS + Gemini LLM | Only fires when a technical exit signal is already active. News classified by LLM |
 
