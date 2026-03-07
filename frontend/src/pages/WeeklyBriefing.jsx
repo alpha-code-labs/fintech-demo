@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { getBriefing } from '../services/api';
 import {
   PageHeader, MarketPhaseBadge, ScoreBadge, StatusBadge,
-  SectionTitle, ErrorBanner
+  SectionTitle, ErrorBanner, HowThisWorks
 } from '../components/common';
 import { SkeletonPage } from '../components/common/LoadingSkeleton';
 
@@ -43,6 +43,34 @@ export default function WeeklyBriefing() {
         right={
           <Chip label={`Week ending: ${data.week_ending}`} size="small" sx={{ fontWeight: 500 }} />
         }
+      />
+
+      <HowThisWorks
+        title="How This Screen Works"
+        sections={[
+          {
+            heading: 'What this is',
+            body: 'Every week, the system compiles everything from the other screens into one summary. This is the dashboard: what\'s happening in the world, what\'s happening in India, what\'s happening in sectors, and what\'s happening in stocks you care about.',
+          },
+          {
+            heading: 'How it\'s built',
+            bullets: [
+              'Market phase: Same indicator from Global Pulse, with week-over-week change tracking',
+              'World + India narratives: AI-generated (Gemini 2.0 Flash) from the macro data — indices, commodities, yields, flows',
+              'Sector notes: Top sectors by strength and weakness, with references to specific triggered stocks',
+              'Top signals: Highest-scoring stocks from this week\'s scanner run, with their key pattern/driver',
+              'Portfolio alerts: Any holdings currently in Alert or Warning state',
+            ],
+          },
+          {
+            heading: 'AI-Generated Text',
+            body: 'The World and India sections are written by AI from the numbers. The AI summarizes facts — it does not give opinions or recommendations. When no AI service is configured, the system falls back to data-only summaries.',
+          },
+          {
+            heading: 'Automated',
+            body: '100%. Generated automatically from the week\'s data. Designed to be delivered via in-app, WhatsApp, or email.',
+          },
+        ]}
       />
 
       {/* Market Phase */}

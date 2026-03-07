@@ -2,21 +2,25 @@
   "week_ending": "2026-02-28",
   "market_phase": "CAUTIOUSLY BULLISH",
   "market_phase_change": "unchanged",
-  "world": "US markets up 1.2% on Fed rate hold. Dollar weakening. China stimulus announced, commodity bounce.",
-  "india": "Nifty +0.8%. Midcap outperforming (+1.4%). Breadth healthy — A/D at 2.1. FII selling Rs 2,300 Cr, DII bought Rs 4,100 Cr.",
+  "world": "US markets rallied 1.2% on the back of a Fed rate hold. The dollar is weakening against most major currencies, creating a tailwind for emerging market flows. China announced fresh stimulus measures, triggering a commodity bounce — copper and aluminium up 2-3%. European markets flat as ECB signals caution on rate cuts. The global risk-on tone is supportive for Indian equities, though FII flows remain selective.",
+  "india": "Nifty 50 gained 0.6% for the week, closing at 22,345. Midcaps outperformed significantly (+1.1%), continuing a 3-week trend of broader market strength. Market breadth is healthy — the advance/decline ratio stands at 2.16 with 342 stocks advancing vs 158 declining. 47 stocks hit fresh 52-week highs vs only 12 lows. FII sold Rs 2,345 Cr this week but DII absorbed Rs 4,567 Cr, providing a floor. IT and Pharma sectors are leading, while Auto and Energy remain under pressure.",
   "sectors": [
-    {"name": "IT", "note": "Strongest. RS +4.2% vs Nifty."},
-    {"name": "Chemicals", "note": "Emerging. 3 stocks triggered."},
-    {"name": "Auto", "note": "Weakening. Sector MA broken."}
+    {"name": "IT", "note": "Strongest sector this week. RS +4.2% vs Nifty. PERSISTENT triggered with 8/8 score — 11-month VCP breakout. Deal pipeline commentary from top-tier companies is bullish."},
+    {"name": "Pharma", "note": "Emerging strength. RS +3.1%. AUROPHARMA showing Cup & Handle breakout with earnings momentum. FDA pipeline looking clean across the sector."},
+    {"name": "Chemical", "note": "DEEPAKNTR triggered with Inv H&S pattern. Sector showing early signs of recovery after 18-month downcycle. Watch for sustained volume."},
+    {"name": "Metal", "note": "HINDALCO leading with Darvas Box breakout. China stimulus driving commodity prices higher. Aluminium at 6-month high."},
+    {"name": "Auto", "note": "Weakest sector. TATAMOTORS in alert — multiple exit signals. Sector index broke 52W MA. Avoid fresh entries."}
   ],
-  "new_signals_count": 23,
+  "new_signals_count": 18,
   "top_signals": [
-    {"symbol": "ABCL", "name": "ABCL Ltd", "sector": "Chemicals", "score": 8, "note": "14-month breakout"},
-    {"symbol": "NAVINFLUOR", "name": "Navin Fluorine", "sector": "Chemicals", "score": 7, "note": "sector momentum"},
-    {"symbol": "XYZPHARMA", "name": "XYZ Pharma", "sector": "Pharma", "score": 6, "note": "earnings surprise"}
+    {"symbol": "PERSISTENT", "name": "Persistent Systems", "sector": "IT", "score": 8, "note": "11-month VCP breakout on 8x volume. All MAs aligned. Golden cross this week."},
+    {"symbol": "AUROPHARMA", "name": "Aurobindo Pharma", "sector": "Pharma", "score": 7, "note": "9-month Cup & Handle. Earnings surprise + margin expansion."},
+    {"symbol": "HINDALCO", "name": "Hindalco Industries", "sector": "Metal", "score": 7, "note": "8-month Darvas Box breakout. Sector tailwind from China stimulus."},
+    {"symbol": "DEEPAKNTR", "name": "Deepak Nitrite", "sector": "Chemical", "score": 6, "note": "Inv H&S forming. Sector recovery play. Margins expanding."}
   ],
   "portfolio_alerts": [
-    {"symbol": "STUAUTO", "name": "STU Auto", "level": "alert", "note": "Multiple exit signals. Review."},
-    {"symbol": "MNOINFRA", "name": "MNO Infra", "level": "warning", "note": "Upper wicks developing. Watch."}
+    {"symbol": "TATAMOTORS", "name": "Tata Motors", "level": "alert", "note": "5 exit signals active. Below 30W MA, support broken, bad news on JLR. Review urgently."},
+    {"symbol": "ONGC", "name": "Oil & Natural Gas Corp", "level": "alert", "note": "Below both 30W and 52W MA. 3-month low broken. Crude price decline hurting thesis."},
+    {"symbol": "TITAN", "name": "Titan Company", "level": "warning", "note": "3 weeks of upper wicks. Earnings growth slowing. Watch closely."}
   ]
 }

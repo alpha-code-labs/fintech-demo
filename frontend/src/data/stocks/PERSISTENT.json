@@ -1,0 +1,61 @@
+{
+  "symbol": "PERSISTENT",
+  "name": "Persistent Systems",
+  "sector": "IT",
+  "market_cap": 72500,
+  "price": 5840,
+  "price_date": "2026-02-28",
+  "score": 8,
+  "technical": {
+    "vol_vs_avg": 8.1,
+    "delivery_pct": 71,
+    "above_30w_ma": true,
+    "ma_30w": 5180,
+    "above_52w_ma": true,
+    "ma_52w": 4820,
+    "golden_cross": "10W crossed 30W this week",
+    "rs_vs_nifty_4w": 6.8,
+    "consolidation_months": 11,
+    "consolidation_range": [4650, 5350],
+    "breakout_level": 5350,
+    "detected_patterns": ["VCP"]
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": 4.2,
+    "peers_triggered": [
+      {"symbol": "LTIM", "name": "LTIMindtree", "change_pct": 5.8, "vol_vs_avg": 4.6, "score": 5},
+      {"symbol": "COFORGE", "name": "Coforge", "change_pct": 4.2, "vol_vs_avg": 3.8, "score": 4}
+    ]
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 2680, "operating_margin": 16.8, "net_profit": 318, "eps": 41.2, "total_debt": 120, "roce": 28.4, "promoter_holding": 31.2},
+      {"label": "Q2 FY26", "revenue": 2420, "operating_margin": 15.4, "net_profit": 264, "eps": 34.2, "total_debt": 145, "roce": 25.1, "promoter_holding": 31.2},
+      {"label": "Q1 FY26", "revenue": 2280, "operating_margin": 14.8, "net_profit": 238, "eps": 30.8, "total_debt": 160, "roce": 23.2, "promoter_holding": 31.2},
+      {"label": "Q4 FY25", "revenue": 2090, "operating_margin": 14.1, "net_profit": 208, "eps": 26.9, "total_debt": 180, "roce": 21.5, "promoter_holding": 31.5}
+    ],
+    "pe": 22.8,
+    "industry_pe": 28.5
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Earnings Surprise", "detail": "Revenue up 28% YoY. Net profit up 53%. Deal wins at record high — $450M in Q3 alone.", "source": "auto"},
+      {"setup": "Debt Reduction", "detail": "Debt down 33% over 4 quarters (₹180 Cr to ₹120 Cr).", "source": "auto"},
+      {"setup": "Margin Expansion", "detail": "OPM improved from 14.1% to 16.8% over 4 quarters. Offshore mix increasing.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "IT sector RS +4.2% vs Nifty. 2 peers also triggered this week. Deal pipeline across sector is strong.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Management Change", "detail": "No recent leadership changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "Not applicable to IT sector.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No index rebalancing. No unusual bulk deals.", "source": "data"},
+      {"setup": "Business Mix Change", "detail": "Growing BFSI vertical — check segment breakdown.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE improving but within normal range for IT.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "PERSISTENT breaking out of 11-month VCP on 8.1x volume with 71% delivery — textbook institutional accumulation. All moving averages aligned, golden cross triggered this week. Revenue growing 28% YoY with margins expanding from 14% to 17%. Debt declining. Sector confirming with 2 IT peers also triggered. P/E 22.8x is well below industry average of 28.5x. This is the strongest signal in this week's scan.",
+  "key_levels": {
+    "breakout": 5350,
+    "ma_30w": 5180,
+    "ma_52w": 4820
+  }
+}

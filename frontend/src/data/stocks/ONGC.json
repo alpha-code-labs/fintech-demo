@@ -1,0 +1,58 @@
+{
+  "symbol": "ONGC",
+  "name": "Oil & Natural Gas Corp",
+  "sector": "Energy",
+  "market_cap": 337000,
+  "price": 268,
+  "price_date": "2026-02-28",
+  "score": 3,
+  "technical": {
+    "vol_vs_avg": 5.3,
+    "delivery_pct": 38,
+    "above_30w_ma": false,
+    "ma_30w": 282,
+    "above_52w_ma": false,
+    "ma_52w": 278,
+    "golden_cross": null,
+    "rs_vs_nifty_4w": -0.8,
+    "consolidation_months": 5,
+    "consolidation_range": [265, 300],
+    "breakout_level": 300,
+    "detected_patterns": []
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": -1.8,
+    "peers_triggered": []
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 35800, "operating_margin": 28.5, "net_profit": 8420, "eps": 6.7, "total_debt": 18500, "roce": 15.2, "promoter_holding": 58.9},
+      {"label": "Q2 FY26", "revenue": 37200, "operating_margin": 30.2, "net_profit": 9280, "eps": 7.4, "total_debt": 19200, "roce": 16.4, "promoter_holding": 58.9},
+      {"label": "Q1 FY26", "revenue": 38500, "operating_margin": 31.8, "net_profit": 10100, "eps": 8.0, "total_debt": 20000, "roce": 17.2, "promoter_holding": 58.9},
+      {"label": "Q4 FY25", "revenue": 40200, "operating_margin": 33.5, "net_profit": 11200, "eps": 8.9, "total_debt": 21500, "roce": 18.5, "promoter_holding": 58.9}
+    ],
+    "pe": 10.0,
+    "industry_pe": 8.5
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Debt Reduction", "detail": "Debt down 14% in 4 quarters.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Earnings Surprise", "detail": "Earnings declining — profit down 25% YoY as crude prices fall.", "source": "auto"},
+      {"setup": "Management Change", "detail": "PSU — no changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "Global crude supply increasing — OPEC+ easing cuts.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No unusual deals.", "source": "data"},
+      {"setup": "Margin Expansion", "detail": "Margins contracting — OPM from 33.5% to 28.5%.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "Energy sector weak. RS -1.8% vs Nifty.", "source": "auto"},
+      {"setup": "Business Mix Change", "detail": "Green energy push — but early stage.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE declining from 18.5% to 15.2%.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "ONGC is under pressure. Below both 30W and 52W MA. Crude oil prices declining as OPEC+ eases supply cuts. Revenue and margins both contracting — profit down 25% YoY. Debt reduction is the one positive but not enough to offset the commodity headwind. Energy sector RS negative. Multiple exit signals active — this is an ALERT holding.",
+  "key_levels": {
+    "breakout": 300,
+    "ma_30w": 282,
+    "ma_52w": 278
+  }
+}

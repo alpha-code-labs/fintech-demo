@@ -9,3 +9,4 @@ export { default as SectionTitle } from './SectionTitle';
 export { default as EmptyState } from './EmptyState';
 export { default as ErrorBanner } from './ErrorBanner';
 export { SkeletonCard, SkeletonTable, SkeletonPage } from './LoadingSkeleton';
+export { default as HowThisWorks } from './HowThisWorks';

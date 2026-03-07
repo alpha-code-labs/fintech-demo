@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import { getScanner } from '../services/api';
 import {
   PageHeader, ScoreBadge, ChangeIndicator, SignalChip,
-  SectionTitle, ErrorBanner, EmptyState
+  SectionTitle, ErrorBanner, EmptyState, HowThisWorks
 } from '../components/common';
 import { SkeletonPage } from '../components/common/LoadingSkeleton';
 
@@ -126,6 +126,50 @@ export default function SignalScanner() {
             </Select>
           </FormControl>
         }
+      />
+
+      <HowThisWorks
+        title="How This Screen Works"
+        sections={[
+          {
+            heading: 'What this is',
+            body: 'The system runs your three filters on all stocks above 500 Cr market cap every week. Stocks that pass all three show up here, ranked by an 8-point scoring system.',
+          },
+          {
+            heading: '3 Gates (must pass all)',
+            bullets: [
+              'Volume: Weekly traded volume must be >= 5x the 52-week average. A spike in volume is the first sign that something has changed.',
+              'Price: Price must be up >= 5% for the week. High volume combined with price going up means the move is viewed positively.',
+              'Delivery: Delivery volume must be >= 35%. High delivery means actual buying (shares transferred), not just speculative trading.',
+            ],
+          },
+          {
+            heading: '8-Point Scoring',
+            body: 'Each stock that passes the 3 gates gets scored on 8 additional criteria. The higher the score, the more signals are aligned in its favour.',
+            bullets: [
+              'Delivery >= 35%',
+              'Above 30-week moving average',
+              'Above 52-week moving average',
+              'Golden cross (10W MA crossing above 30W/52W)',
+              'Relative strength vs Nifty positive (outperforming the market)',
+              'Breaking out of 6+ month consolidation',
+              'Sector index outperforming Nifty',
+              '2+ sector peers also triggered this week',
+            ],
+          },
+          {
+            heading: 'Watch for Breakdown',
+            body: 'Stocks with high volume but price going DOWN. This is the opposite signal — possible distribution (selling). These appear in a separate section below the main table.',
+          },
+          {
+            heading: 'Week Selector',
+            body: 'The dropdown in the header lets you view scanner results for any of the last 13 weeks. When you click Deep Dive from a historical week, the stock analysis is also shown as of that date.',
+          },
+          {
+            heading: 'What stays human',
+            body: 'The scanner finds the candidates. You decide which patterns are convincing, whether the fundamentals support the move, and whether to buy.',
+          },
+        ]}
       />
 
       {/* Summary Stats */}

@@ -1,0 +1,57 @@
+{
+  "symbol": "IRCON",
+  "name": "IRCON International",
+  "sector": "Infra",
+  "market_cap": 22100,
+  "price": 235,
+  "price_date": "2026-02-28",
+  "score": 4,
+  "technical": {
+    "vol_vs_avg": 3.2,
+    "delivery_pct": 45,
+    "above_30w_ma": true,
+    "ma_30w": 215,
+    "above_52w_ma": true,
+    "ma_52w": 198,
+    "golden_cross": null,
+    "rs_vs_nifty_4w": 2.1,
+    "consolidation_months": 0,
+    "consolidation_range": null,
+    "breakout_level": null,
+    "detected_patterns": []
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": 0.4,
+    "peers_triggered": []
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 3420, "operating_margin": 9.8, "net_profit": 245, "eps": 2.6, "total_debt": 1850, "roce": 14.2, "promoter_holding": 73.2},
+      {"label": "Q2 FY26", "revenue": 3280, "operating_margin": 9.5, "net_profit": 228, "eps": 2.4, "total_debt": 2050, "roce": 13.5, "promoter_holding": 73.2},
+      {"label": "Q1 FY26", "revenue": 3050, "operating_margin": 9.2, "net_profit": 205, "eps": 2.2, "total_debt": 2200, "roce": 12.8, "promoter_holding": 73.2},
+      {"label": "Q4 FY25", "revenue": 2890, "operating_margin": 8.8, "net_profit": 185, "eps": 2.0, "total_debt": 2350, "roce": 12.1, "promoter_holding": 73.2}
+    ],
+    "pe": 22.6,
+    "industry_pe": 25.4
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Debt Reduction", "detail": "Debt down 21% over 4 quarters (₹2,350 Cr to ₹1,850 Cr). Strong order book generating cash.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Earnings Surprise", "detail": "Steady growth, no major surprise. Revenue up 18% YoY.", "source": "auto"},
+      {"setup": "Management Change", "detail": "PSU — no changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "No disruption.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No unusual deals.", "source": "data"},
+      {"setup": "Margin Expansion", "detail": "Margins stable around 9-10%.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "Infra sector neutral.", "source": "auto"},
+      {"setup": "Business Mix Change", "detail": "International project mix increasing.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE improving from 12.1% to 14.2%.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "IRCON is a recently added portfolio holding (45 days). Above both MAs. Debt reducing steadily — down 21% in 4 quarters on strong order execution. PSU with 73% promoter holding. Margins stable but not expanding. No exit signals. Steady performer — hold and monitor.",
+  "key_levels": {
+    "ma_30w": 215,
+    "ma_52w": 198
+  }
+}

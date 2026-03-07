@@ -1,0 +1,61 @@
+{
+  "symbol": "HINDALCO",
+  "name": "Hindalco Industries",
+  "sector": "Metal",
+  "market_cap": 145000,
+  "price": 645,
+  "price_date": "2026-02-28",
+  "score": 7,
+  "technical": {
+    "vol_vs_avg": 7.2,
+    "delivery_pct": 58,
+    "above_30w_ma": true,
+    "ma_30w": 585,
+    "above_52w_ma": true,
+    "ma_52w": 540,
+    "golden_cross": null,
+    "rs_vs_nifty_4w": 5.4,
+    "consolidation_months": 8,
+    "consolidation_range": [510, 590],
+    "breakout_level": 590,
+    "detected_patterns": ["Darvas Box"]
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": 2.8,
+    "peers_triggered": [
+      {"symbol": "NATIONALUM", "name": "Natl. Aluminium", "change_pct": 5.2, "vol_vs_avg": 4.8, "score": 5},
+      {"symbol": "VEDL", "name": "Vedanta", "change_pct": 4.5, "vol_vs_avg": 3.9, "score": 4}
+    ]
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 58400, "operating_margin": 14.8, "net_profit": 4250, "eps": 18.9, "total_debt": 32000, "roce": 12.8, "promoter_holding": 34.7},
+      {"label": "Q2 FY26", "revenue": 54200, "operating_margin": 13.2, "net_profit": 3480, "eps": 15.5, "total_debt": 33500, "roce": 11.4, "promoter_holding": 34.7},
+      {"label": "Q1 FY26", "revenue": 51800, "operating_margin": 12.5, "net_profit": 3120, "eps": 13.9, "total_debt": 34800, "roce": 10.5, "promoter_holding": 34.7},
+      {"label": "Q4 FY25", "revenue": 49500, "operating_margin": 11.8, "net_profit": 2750, "eps": 12.2, "total_debt": 36000, "roce": 9.8, "promoter_holding": 34.7}
+    ],
+    "pe": 8.5,
+    "industry_pe": 12.4
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Earnings Surprise", "detail": "Net profit up 55% YoY on aluminium price recovery.", "source": "auto"},
+      {"setup": "Margin Expansion", "detail": "OPM expanded from 11.8% to 14.8% in 4 quarters.", "source": "auto"},
+      {"setup": "Debt Reduction", "detail": "Debt reduced 11% over 4 quarters.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "Metal sector RS +2.8%. 2 peers triggered. China stimulus boosting commodity prices.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Management Change", "detail": "No changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "Aluminium supply tight globally — partially driving prices.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No unusual deals.", "source": "data"},
+      {"setup": "Business Mix Change", "detail": "Novelis (US subsidiary) performing well.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE improving from 9.8% to 12.8%.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "HINDALCO breaking out of 8-month Darvas Box on 7.2x volume. Aluminium prices at 6-month high on China stimulus. Earnings surging — profit up 55% YoY. Margins expanding, debt declining. 2 metal peers also triggered. P/E at 8.5x is deeply undervalued vs industry 12.4x. Classic sector cycle play with commodity tailwind.",
+  "key_levels": {
+    "breakout": 590,
+    "ma_30w": 585,
+    "ma_52w": 540
+  }
+}

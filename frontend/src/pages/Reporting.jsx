@@ -6,7 +6,7 @@ import {
 import { Assessment, TrendingUp, TrendingDown } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { getPortfolio } from '../services/api';
-import { PageHeader, ChangeIndicator, ErrorBanner } from '../components/common';
+import { PageHeader, ChangeIndicator, ErrorBanner, HowThisWorks } from '../components/common';
 import { SkeletonPage } from '../components/common/LoadingSkeleton';
 
 function getDaysHeld(buyDate) {
@@ -79,6 +79,28 @@ export default function Reporting() {
   return (
     <Box>
       <PageHeader title="Reporting" subtitle="Portfolio overview and compliance" />
+
+      <HowThisWorks
+        title="How This Screen Works"
+        sections={[
+          {
+            heading: 'What this is',
+            body: 'Portfolio overview and compliance tracking. Shows total stock count against the 15-25 target, overall P&L, and a detailed holdings table sorted by how long each stock has been held.',
+          },
+          {
+            heading: 'Stock Count Target',
+            body: 'The portfolio targets 15-25 stocks — 15 when being aggressive (higher conviction, fewer positions), 25 when diversifying. The count indicator shows green when in range, amber when outside.',
+          },
+          {
+            heading: '6-Month Compliance',
+            body: 'Each holding tracks days held. The system is designed for medium-to-long-term holds with a 6-month minimum. The table shows which holdings have completed this period and which have time remaining.',
+          },
+          {
+            heading: 'P&L Calculations',
+            body: 'Invested value = buy price x quantity. Current value = latest market price x quantity. P&L = difference. All prices are from the most recent trading day close.',
+          },
+        ]}
+      />
 
       {/* Stock count indicator */}
       <Card sx={{ mb: 3, border: `1px solid`, borderColor: inRange ? 'success.main' : totalCount === 0 ? 'var(--surface-08)' : 'warning.main' }}>

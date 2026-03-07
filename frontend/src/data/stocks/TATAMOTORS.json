@@ -1,0 +1,56 @@
+{
+  "symbol": "TATAMOTORS",
+  "name": "Tata Motors",
+  "sector": "Auto",
+  "market_cap": 328000,
+  "price": 892,
+  "price_date": "2026-02-28",
+  "score": 2,
+  "technical": {
+    "vol_vs_avg": 3.4,
+    "delivery_pct": 35,
+    "above_30w_ma": false,
+    "ma_30w": 925,
+    "above_52w_ma": false,
+    "ma_52w": 960,
+    "golden_cross": null,
+    "rs_vs_nifty_4w": -4.8,
+    "consolidation_months": 0,
+    "consolidation_range": null,
+    "breakout_level": null,
+    "detected_patterns": []
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": -3.2,
+    "peers_triggered": []
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 108500, "operating_margin": 11.2, "net_profit": 7450, "eps": 20.3, "total_debt": 48000, "roce": 14.2, "promoter_holding": 46.4},
+      {"label": "Q2 FY26", "revenue": 112400, "operating_margin": 12.8, "net_profit": 8900, "eps": 24.2, "total_debt": 46500, "roce": 15.8, "promoter_holding": 46.4},
+      {"label": "Q1 FY26", "revenue": 115200, "operating_margin": 13.5, "net_profit": 9800, "eps": 26.7, "total_debt": 45000, "roce": 16.5, "promoter_holding": 46.4},
+      {"label": "Q4 FY25", "revenue": 118600, "operating_margin": 14.2, "net_profit": 10500, "eps": 28.6, "total_debt": 44000, "roce": 17.2, "promoter_holding": 46.4}
+    ],
+    "pe": 11.0,
+    "industry_pe": 18.5
+  },
+  "setups": {
+    "detected": [],
+    "not_detected": [
+      {"setup": "Earnings Surprise", "detail": "Earnings declining. Revenue down 8.5% QoQ, margins compressing.", "source": "auto"},
+      {"setup": "Management Change", "detail": "No changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "No disruption.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "FII reducing position — net seller last 3 months.", "source": "data"},
+      {"setup": "Debt Reduction", "detail": "Debt increasing — up 9% in 4 quarters.", "source": "auto"},
+      {"setup": "Margin Expansion", "detail": "Margins contracting — OPM down from 14.2% to 11.2%.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "Auto sector weakening. Sector RS -3.2% vs Nifty.", "source": "auto"},
+      {"setup": "Business Mix Change", "detail": "JLR headwinds in Europe.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE declining from 17.2% to 14.2%.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "TATAMOTORS is in trouble. Below both 30W and 52W MA. 4 weeks of upper wicks followed by support break at ₹910. JLR sales missed in Europe, margin guidance cut. Auto sector itself is weak — index broke 52W MA. Revenue declining, margins compressing, debt rising. Multiple exit signals active. This is an ALERT holding — review urgently.",
+  "key_levels": {
+    "ma_30w": 925,
+    "ma_52w": 960
+  }
+}

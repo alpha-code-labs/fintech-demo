@@ -19,7 +19,7 @@ import {
 } from '../services/api';
 import {
   PageHeader, ChangeIndicator, StatusBadge, SectionTitle,
-  ErrorBanner, EmptyState
+  ErrorBanner, EmptyState, HowThisWorks
 } from '../components/common';
 import { SkeletonPage } from '../components/common/LoadingSkeleton';
 
@@ -180,6 +180,47 @@ export default function PortfolioMonitor() {
             </Button>
           </Box>
         }
+      />
+
+      <HowThisWorks
+        title="How This Screen Works"
+        sections={[
+          {
+            heading: 'What this is',
+            body: 'Shows all your current holdings. The system checks for exit signals every day and groups stocks into three buckets: Healthy (no signals), Warning (1-2 early signals), and Alert (MA break or 3+ signals). The system detects — you decide whether to sell.',
+          },
+          {
+            heading: 'Exit Signals Monitored',
+            bullets: [
+              'Upper wicks: 3+ consecutive weekly candles with long upper wicks — signals a month of selling pressure',
+              'Below 30-week MA: Price has broken below the 30-week moving average — a key support level',
+              'Below 52-week MA: Price has broken below the 52-week moving average — a more serious break',
+              'Support break: Price has fallen below its 3-month low',
+              'Head & Shoulders: Classic reversal pattern detected from weekly highs',
+              'Bad news + technical breakdown: Negative news confirmed by AI, combined with an active technical signal',
+            ],
+          },
+          {
+            heading: '6-Month Holding Period',
+            body: 'Each holding shows days held and a 6-month compliance indicator. Selling before 6 months triggers a compliance warning. This is tracked because the system is designed for medium-to-long-term holds.',
+          },
+          {
+            heading: 'Market Leverage',
+            body: 'Tracks market-wide borrowing (margin trading) as a risk indicator. When market participants borrow significantly to invest, it creates fragility. Currently uses F&O open interest as a proxy.',
+          },
+          {
+            heading: 'Tabs',
+            bullets: [
+              'Watchlist: Stocks from the scanner you\'re monitoring but haven\'t bought yet',
+              'Alerts: Price alerts you\'ve set (above/below a target price)',
+              'Decision Log: Complete history of your buy, sell, hold, and add-more decisions',
+            ],
+          },
+          {
+            heading: 'What stays human',
+            body: 'The sell decision is always yours. The system surfaces the signals so you can make an informed choice. The Hold button lets you record why you\'re staying despite exit signals.',
+          },
+        ]}
       />
 
       {isEmpty ? (

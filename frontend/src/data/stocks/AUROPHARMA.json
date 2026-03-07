@@ -1,0 +1,60 @@
+{
+  "symbol": "AUROPHARMA",
+  "name": "Aurobindo Pharma",
+  "sector": "Pharma",
+  "market_cap": 75200,
+  "price": 1285,
+  "price_date": "2026-02-28",
+  "score": 7,
+  "technical": {
+    "vol_vs_avg": 6.4,
+    "delivery_pct": 64,
+    "above_30w_ma": true,
+    "ma_30w": 1140,
+    "above_52w_ma": true,
+    "ma_52w": 1050,
+    "golden_cross": null,
+    "rs_vs_nifty_4w": 4.1,
+    "consolidation_months": 9,
+    "consolidation_range": [980, 1120],
+    "breakout_level": 1120,
+    "detected_patterns": ["Cup & Handle"]
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": 3.1,
+    "peers_triggered": [
+      {"symbol": "SUNPHARMA", "name": "Sun Pharma", "change_pct": 3.8, "vol_vs_avg": 3.2, "score": 4}
+    ]
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 7420, "operating_margin": 21.2, "net_profit": 1120, "eps": 19.1, "total_debt": 2800, "roce": 18.5, "promoter_holding": 51.8},
+      {"label": "Q2 FY26", "revenue": 6890, "operating_margin": 19.5, "net_profit": 940, "eps": 16.0, "total_debt": 3100, "roce": 16.2, "promoter_holding": 51.8},
+      {"label": "Q1 FY26", "revenue": 6540, "operating_margin": 17.8, "net_profit": 810, "eps": 13.8, "total_debt": 3350, "roce": 14.8, "promoter_holding": 51.8},
+      {"label": "Q4 FY25", "revenue": 6280, "operating_margin": 16.1, "net_profit": 695, "eps": 11.9, "total_debt": 3600, "roce": 13.1, "promoter_holding": 52.1}
+    ],
+    "pe": 16.8,
+    "industry_pe": 22.4
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Earnings Surprise", "detail": "Net profit up 61% YoY. Revenue grew 18% with expanding margins.", "source": "auto"},
+      {"setup": "Margin Expansion", "detail": "OPM improved from 16.1% to 21.2% over 4 quarters. US generic pricing stabilising.", "source": "auto"},
+      {"setup": "Debt Reduction", "detail": "Debt down 22% (₹3,600 Cr to ₹2,800 Cr) in 4 quarters.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "Pharma sector RS +3.1%. Sun Pharma also triggered. FDA approvals accelerating across sector.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Management Change", "detail": "No recent board changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "No disruption detected.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No unusual deals.", "source": "data"},
+      {"setup": "Business Mix Change", "detail": "Injectable portfolio growing — check segment data.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE improving alongside debt reduction.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "AUROPHARMA breaking out of 9-month Cup & Handle on 6.4x volume. Delivery at 64% confirms institutional buying. Earnings surging — profit up 61% YoY with margins expanding from 16% to 21%. Debt declining steadily. Pharma sector confirming with Sun Pharma also triggered. P/E at 16.8x is cheap vs industry 22.4x. FDA pipeline is clean. Strong fundamental + technical alignment.",
+  "key_levels": {
+    "breakout": 1120,
+    "ma_30w": 1140,
+    "ma_52w": 1050
+  }
+}

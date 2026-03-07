@@ -9,7 +9,7 @@ import {
 import { getMacro } from '../services/api';
 import {
   PageHeader, MarketPhaseBadge, StatCard, ChangeIndicator,
-  SectionTitle, ErrorBanner
+  SectionTitle, ErrorBanner, HowThisWorks
 } from '../components/common';
 import { SkeletonPage } from '../components/common/LoadingSkeleton';
 
@@ -49,6 +49,42 @@ export default function GlobalPulse() {
             sx={{ fontVariantNumeric: 'tabular-nums', fontWeight: 500 }}
           />
         }
+      />
+
+      <HowThisWorks
+        title="How This Screen Works"
+        sections={[
+          {
+            heading: 'What this is',
+            body: 'Your daily macro scan on one screen. Everything you currently check across multiple TradingView tabs — global indices, commodities, yields, FII/DII flows, Indian indices, sector strength, and market breadth.',
+          },
+          {
+            heading: 'Market Phase',
+            body: 'A structured indicator that answers: is the market bullish, sideways, or bearish? The system scores 4 criteria (Nifty vs 200-day MA, advance/decline ratio, 52W highs vs lows, FII+DII flows) and maps the combined score to one of 5 states.',
+            chips: ['BULLISH', 'CAUTIOUSLY BULLISH', 'SIDEWAYS', 'CAUTIOUSLY BEARISH', 'BEARISH'],
+          },
+          {
+            heading: 'Sector Relative Strength',
+            body: 'Each sector\'s 4-week return minus Nifty\'s 4-week return. A positive number means the sector is outperforming the broader market — buyers are prioritizing it. Sorted strongest to weakest.',
+          },
+          {
+            heading: 'Market Depth',
+            body: 'The index is a mask — market depth is the flashlight. Advancing vs declining stocks tells you breadth. 52W highs vs lows tells you where momentum is concentrated. These numbers reveal what the headline index hides.',
+          },
+          {
+            heading: 'Data Sources',
+            bullets: [
+              'World indices and commodities: yfinance (refreshed every 4 hours)',
+              'Indian indices: NSE (daily end-of-day)',
+              'DXY, US 10Y, INR/USD: yfinance | India 10Y: CCIL | FII/DII: NSE',
+              'Market depth (A/D, 52W H/L): nsetools (refreshed every 4 hours)',
+            ],
+          },
+          {
+            heading: 'Automated',
+            body: '100%. No human input needed. All data is auto-refreshed during market hours and end-of-day.',
+          },
+        ]}
       />
 
       {/* Market Phase Banner */}

@@ -1,0 +1,57 @@
+{
+  "symbol": "TITAN",
+  "name": "Titan Company",
+  "sector": "Consumer Cyclical",
+  "market_cap": 312000,
+  "price": 3520,
+  "price_date": "2026-02-28",
+  "score": 5,
+  "technical": {
+    "vol_vs_avg": 5.1,
+    "delivery_pct": 55,
+    "above_30w_ma": true,
+    "ma_30w": 3340,
+    "above_52w_ma": true,
+    "ma_52w": 3180,
+    "golden_cross": null,
+    "rs_vs_nifty_4w": 1.8,
+    "consolidation_months": 0,
+    "consolidation_range": null,
+    "breakout_level": null,
+    "detected_patterns": []
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": -0.5,
+    "peers_triggered": []
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 14200, "operating_margin": 12.4, "net_profit": 1180, "eps": 13.3, "total_debt": 850, "roce": 24.8, "promoter_holding": 52.9},
+      {"label": "Q2 FY26", "revenue": 13800, "operating_margin": 13.1, "net_profit": 1220, "eps": 13.7, "total_debt": 820, "roce": 25.5, "promoter_holding": 52.9},
+      {"label": "Q1 FY26", "revenue": 12900, "operating_margin": 12.8, "net_profit": 1100, "eps": 12.4, "total_debt": 800, "roce": 25.1, "promoter_holding": 52.9},
+      {"label": "Q4 FY25", "revenue": 12400, "operating_margin": 11.5, "net_profit": 985, "eps": 11.1, "total_debt": 780, "roce": 24.2, "promoter_holding": 52.9}
+    ],
+    "pe": 66.3,
+    "industry_pe": 45.2
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Earnings Surprise", "detail": "Revenue up 14.5% YoY. But growth rate slowing — Q2 was 18%.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Management Change", "detail": "No changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "Gold price volatility impacting margins.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No unusual deals.", "source": "data"},
+      {"setup": "Debt Reduction", "detail": "Debt stable.", "source": "auto"},
+      {"setup": "Margin Expansion", "detail": "Margins under pressure from gold prices.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "Consumer sector RS turning negative.", "source": "auto"},
+      {"setup": "Business Mix Change", "detail": "No significant shift.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE stable at 24-25%.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "TITAN showing 3 consecutive weeks of upper wicks — a warning sign of distribution. Above both MAs but earnings growth is decelerating (Q3 +6% vs Q2 +22%). Gold price pressure on margins. Consumer sector turning negative. Hold with caution — if upper wicks continue into week 4, consider reducing position.",
+  "key_levels": {
+    "ma_30w": 3340,
+    "ma_52w": 3180
+  }
+}

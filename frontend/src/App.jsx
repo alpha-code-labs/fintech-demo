@@ -6,6 +6,7 @@ import StockDeepDive from './pages/StockDeepDive';
 import PortfolioMonitor from './pages/PortfolioMonitor';
 import Reporting from './pages/Reporting';
 import WeeklyBriefing from './pages/WeeklyBriefing';
+import DataBlueprint from './pages/DataBlueprint';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/portfolio" element={<PortfolioMonitor />} />
         <Route path="/reporting" element={<Reporting />} />
         <Route path="/briefing" element={<WeeklyBriefing />} />
+        <Route path="/blueprint" element={<DataBlueprint />} />
       </Routes>
     </Layout>
   );

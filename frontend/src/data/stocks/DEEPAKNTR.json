@@ -1,0 +1,60 @@
+{
+  "symbol": "DEEPAKNTR",
+  "name": "Deepak Nitrite",
+  "sector": "Chemical",
+  "market_cap": 32000,
+  "price": 2340,
+  "price_date": "2026-02-28",
+  "score": 6,
+  "technical": {
+    "vol_vs_avg": 5.9,
+    "delivery_pct": 61,
+    "above_30w_ma": true,
+    "ma_30w": 2180,
+    "above_52w_ma": false,
+    "ma_52w": 2420,
+    "golden_cross": null,
+    "rs_vs_nifty_4w": 3.2,
+    "consolidation_months": 7,
+    "consolidation_range": [1980, 2250],
+    "breakout_level": 2250,
+    "detected_patterns": ["Inv H&S"]
+  },
+  "sector_context": {
+    "sector_rs_vs_nifty_4w": 1.4,
+    "peers_triggered": [
+      {"symbol": "AARTIIND", "name": "Aarti Industries", "change_pct": 4.1, "vol_vs_avg": 3.5, "score": 4}
+    ]
+  },
+  "fundamentals": {
+    "quarters": [
+      {"label": "Q3 FY26", "revenue": 2180, "operating_margin": 17.2, "net_profit": 265, "eps": 19.4, "total_debt": 580, "roce": 16.8, "promoter_holding": 44.8},
+      {"label": "Q2 FY26", "revenue": 2020, "operating_margin": 15.8, "net_profit": 224, "eps": 16.4, "total_debt": 620, "roce": 15.1, "promoter_holding": 44.8},
+      {"label": "Q1 FY26", "revenue": 1880, "operating_margin": 14.2, "net_profit": 185, "eps": 13.5, "total_debt": 650, "roce": 13.5, "promoter_holding": 44.8},
+      {"label": "Q4 FY25", "revenue": 1760, "operating_margin": 12.4, "net_profit": 148, "eps": 10.8, "total_debt": 680, "roce": 11.8, "promoter_holding": 45.1}
+    ],
+    "pe": 30.2,
+    "industry_pe": 26.8
+  },
+  "setups": {
+    "detected": [
+      {"setup": "Margin Expansion", "detail": "OPM nearly doubled from 12.4% to 17.2% in 4 quarters. Specialty chemical mix improving.", "source": "auto"},
+      {"setup": "Earnings Surprise", "detail": "Net profit up 79% YoY. Revenue grew 24%.", "source": "auto"},
+      {"setup": "Sector of the Cycle", "detail": "Chemical sector showing early recovery. Aarti Industries also triggered.", "source": "auto"}
+    ],
+    "not_detected": [
+      {"setup": "Management Change", "detail": "No changes.", "source": "news"},
+      {"setup": "Supply Disruption", "detail": "China chemical exports normalising — less disruption.", "source": "news"},
+      {"setup": "Forced Buying/Selling", "detail": "No unusual deals.", "source": "data"},
+      {"setup": "Debt Reduction", "detail": "Debt reducing gradually — down 15% in 4 quarters.", "source": "auto"},
+      {"setup": "Business Mix Change", "detail": "Phenol chain capacity expansion. Check segment data.", "source": "manual"},
+      {"setup": "Balance Sheet Improvement", "detail": "ROCE improving from 11.8% to 16.8%.", "source": "auto"}
+    ]
+  },
+  "ai_summary": "DEEPAKNTR forming Inverted Head & Shoulders over 7 months, now breaking above the neckline on 5.9x volume. Margins expanding sharply — OPM from 12% to 17%. Chemical sector showing early signs of recovery after 18-month downcycle. Still below 52W MA (₹2,420) which is the next resistance. Profit up 79% YoY. Watch for sustained follow-through above ₹2,250 breakout level.",
+  "key_levels": {
+    "breakout": 2250,
+    "ma_30w": 2180,
+    "ma_52w": 2420
+  }
+}

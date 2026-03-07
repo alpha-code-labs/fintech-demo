@@ -1,32 +1,49 @@
-import axios from 'axios';
+// Demo mode — all data from local JSON, no backend needed
+import macroData from '../data/macro.json';
+import scannerData from '../data/scanner.json';
+import portfolioData from '../data/portfolio.json';
+import briefingData from '../data/briefing.json';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8001';
+// Stock deep dive files
+const stockFiles = import.meta.glob('../data/stocks/*.json', { eager: true });
+const stocks = {};
+for (const [path, mod] of Object.entries(stockFiles)) {
+  const symbol = path.split('/').pop().replace('.json', '');
+  stocks[symbol] = mod.default;
+}
 
-const client = axios.create({ baseURL: API_BASE, timeout: 30000 });
+// Simulate async (components expect promises)
+const resolve = (data) => Promise.resolve(data);
+const noop = () => Promise.resolve({ status: 'ok' });
 
-// Unwrap response.data so components receive the data object directly
-const unwrap = (req) => req.then((res) => res.data);
+// Read APIs
+export const getMacro = () => resolve(macroData);
+export const getScanner = () => resolve(scannerData);
+export const getStock = (symbol) => {
+  const data = stocks[symbol.toUpperCase()];
+  return data ? resolve(data) : Promise.reject(new Error(`Stock ${symbol} not found`));
+};
+export const getPortfolio = () => resolve(portfolioData);
+export const getBriefing = () => resolve(briefingData);
+export const getStockUniverse = () => resolve(
+  Object.values(stocks).map((s) => ({ symbol: s.symbol, name: s.name, sector: s.sector }))
+);
 
-export const getMacro = () => unwrap(client.get('/api/macro'));
-export const getScanner = (weekEnding) => unwrap(client.get('/api/scanner', { params: weekEnding ? { week_ending: weekEnding } : {} }));
-export const getStockUniverse = () => unwrap(client.get('/api/stock/universe'));
-export const getStock = (symbol, weekEnding) => unwrap(client.get(`/api/stock/${symbol}`, { params: weekEnding ? { week_ending: weekEnding } : {} }));
-export const getPortfolio = () => unwrap(client.get('/api/portfolio'));
-export const addHolding = (data) => unwrap(client.post('/api/portfolio/holdings', data));
-export const removeHolding = (symbol) => unwrap(client.delete(`/api/portfolio/holdings/${symbol}`));
-export const getBriefing = () => unwrap(client.get('/api/briefing'));
-export const flagBusinessMix = (symbol, detail = '') => unwrap(client.post(`/api/stock/${symbol}/flag/business_mix`, { detail }));
-export const unflagBusinessMix = (symbol) => unwrap(client.delete(`/api/stock/${symbol}/flag/business_mix`));
-export const getJudgments = (symbol) => unwrap(client.get(`/api/stock/${symbol}/judgments`));
-export const addJudgment = (symbol, data) => unwrap(client.post(`/api/stock/${symbol}/judgments`, data));
-export const deleteJudgment = (symbol, id) => unwrap(client.delete(`/api/stock/${symbol}/judgments/${id}`));
-export const sellHolding = (data) => unwrap(client.post('/api/portfolio/sell', data));
-export const holdDecision = (data) => unwrap(client.post('/api/portfolio/hold', data));
-export const addMoreShares = (data) => unwrap(client.post('/api/portfolio/add-more', data));
-export const getTradeHistory = () => unwrap(client.get('/api/portfolio/history'));
-export const getWatchlist = () => unwrap(client.get('/api/watchlist'));
-export const addToWatchlist = (data) => unwrap(client.post('/api/watchlist', data));
-export const removeFromWatchlist = (symbol) => unwrap(client.delete(`/api/watchlist/${symbol}`));
-export const getAlerts = () => unwrap(client.get('/api/alerts'));
-export const createAlert = (data) => unwrap(client.post('/api/alerts', data));
-export const deleteAlert = (id) => unwrap(client.delete(`/api/alerts/${id}`));
+// Write APIs — no-ops in demo mode, return mock success
+export const addHolding = () => noop();
+export const removeHolding = () => noop();
+export const sellHolding = () => noop();
+export const holdDecision = () => noop();
+export const addMoreShares = () => Promise.resolve({ status: 'ok', result: { new_avg: 0 } });
+export const flagBusinessMix = () => noop();
+export const unflagBusinessMix = () => noop();
+export const addJudgment = () => noop();
+export const deleteJudgment = () => noop();
+export const getJudgments = () => resolve([]);
+export const getTradeHistory = () => resolve([]);
+export const getWatchlist = () => resolve([]);
+export const addToWatchlist = () => noop();
+export const removeFromWatchlist = () => noop();
+export const getAlerts = () => resolve([]);
+export const createAlert = () => noop();
+export const deleteAlert = () => noop();
