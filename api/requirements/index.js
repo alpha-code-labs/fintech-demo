@@ -1,3 +1,8 @@
+// Polyfill crypto for Node.js 16 (SWA managed functions)
+if (typeof globalThis.crypto === 'undefined') {
+  globalThis.crypto = require('crypto').webcrypto;
+}
+
 const { BlobServiceClient } = require('@azure/storage-blob');
 
 const CONTAINER_NAME = 'requirements';
