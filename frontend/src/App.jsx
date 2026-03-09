@@ -7,6 +7,7 @@ import PortfolioMonitor from './pages/PortfolioMonitor';
 import Reporting from './pages/Reporting';
 import WeeklyBriefing from './pages/WeeklyBriefing';
 import DataBlueprint from './pages/DataBlueprint';
+import Requirements from './pages/Requirements';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/reporting" element={<Reporting />} />
         <Route path="/briefing" element={<WeeklyBriefing />} />
         <Route path="/blueprint" element={<DataBlueprint />} />
+        <Route path="/requirements" element={<Requirements />} />
       </Routes>
     </Layout>
   );

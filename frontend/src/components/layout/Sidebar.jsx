@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import {
   Public, Scanner, AccountBalance, Assessment, Summarize,
-  DarkMode, LightMode, Architecture
+  DarkMode, LightMode, Architecture, EditNote
 } from '@mui/icons-material';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useThemeMode } from '../../context/ThemeContext';
@@ -19,6 +19,7 @@ const navItems = [
   { label: 'Reporting', short: 'Report', path: '/reporting', icon: Assessment, description: 'Portfolio report' },
   { label: 'Briefing', short: 'Briefing', path: '/briefing', icon: Summarize, description: 'Weekly summary' },
   { label: 'Data Blueprint', short: 'Blueprint', path: '/blueprint', icon: Architecture, description: 'Technical reference' },
+  { label: 'Requirements', short: 'Reqs', path: '/requirements', icon: EditNote, description: 'Change requests' },
 ];
 
 function isActive(item, pathname) {
